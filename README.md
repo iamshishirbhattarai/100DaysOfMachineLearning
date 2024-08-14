@@ -36,7 +36,7 @@ The tasks I performed and learnt are listed below:
 - Loaded the dataset.
 <br> <br>
 - Observed dataset distribution. <br> <br>
-  ![dataset_distribution](Day 1/dataset_distribution.png)
+  ![dataset_distribution](Day%201/dataset_distribution.png)
 
 
 - Splitted the dataset into training and testing set using both 
@@ -53,12 +53,12 @@ The tasks I performed and learnt are listed below:
   equal proportion of target variable 'y' of each class in both training and testing sets.
   <br> <br>
 - Observed the geographical_distribution. Here, the
-size of the points determines the size of *population* and color represents
-the *median_house_value*. <br> <br>
- ![detailed_geographical_observation](Day 1/detailed_geographical_observation.png)
+  size of the points determines the size of *population* and color represents
+  the *median_house_value*. <br> <br>
+ ![detailed_geographical_observation](Day%201/detailed_geographical_observation.png)
 - Studied correlations among different variables and found out that the 
 *median_income* has good correlation with *median_house_value*. <br>  
-     ![corr_income_value](Day 1/corr_income_value.png)
+     ![corr_income_value](Day%201/corr_income_value.png)
 
 
 ___
