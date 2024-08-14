@@ -22,7 +22,7 @@ ___
 
 | **Days**       | **Learnt Topics**                                              | **Resources used** |
 |----------------|----------------------------------------------------------------|--------------------|
-| [Day 1](Day 1) | EDA, Splitting with random & stratified sampling, correlations |[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                     |
+| [Day 1](Day%201) | EDA, Splitting with random & stratified sampling, correlations |[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                     |
 
 
 ___
