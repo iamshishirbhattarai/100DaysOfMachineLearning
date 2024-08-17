@@ -17,7 +17,7 @@ ___
 
 | **S.N.** | **Project Title**                                                                                                                                                                                | **Status** |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ⏳          |
+| 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
 | **Days**         | **Learnt Topics**                                              | **Resources used**                                                                                          |
@@ -25,6 +25,7 @@ ___
 | [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
  | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)|
  | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
+ | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
 
 
 
@@ -232,3 +233,29 @@ attached below: <br> <br>
 
 ___
 
+## Day 4
+### Completed 'California Housing Price Prediction'
+
+Today I worked on selecting and training model as well as fine tuning the best model so far to optimize the performance.
+Below are some of my learnings and understandings : <br> <br>
+- Trained the model using LinearRegression, DecisionTreeRegressor and RandomForestRegressor. LinearRegression doesn't 
+work fine on training set, DecisionTreeRegressor worked absolutely fine on training set but failed on Cross-Validation, 
+but RandomForestRegressor worked fine on training set and comparatively better on Cross-Validation.
+    <br> <br>
+    ![RandomForest](Day4/RandomForest.png)
+
+- Fine tuned the model using both Grid search and Randomized Search. Randomized Search worked properly compared to Grid
+Search. Screenshot of the notebook are attached below:
+<br> <br>
+    ![GridSearch](Day4/GridSearch.png)
+    <br> <br> ![RandomizedSearch](Day4/RandomizedSearch.png)
+
+
+- Chose the *rand_search* as the *final_model* and evaluated the model using test set and found out it worked better than
+with cross-validation. <br> <br>
+    ![TestSetEvaluation](Day4/TestSetEvaluation.png)
+
+I had already learnt all of these techniques but haven't ever applied on any projects. So, this project was a great
+start to implement my learning practically.
+
+___
