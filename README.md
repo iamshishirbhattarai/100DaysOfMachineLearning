@@ -20,13 +20,13 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**         | **Learnt Topics**                                              | **Resources used**                                                                                          |
-|------------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
- | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)|
- | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
- | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) |
-
+| **Days**      | **Learnt Topics**                                                              | **Resources used**                                                                                                            |
+|---------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                 | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model          | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
 
 
 ___
