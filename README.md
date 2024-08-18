@@ -259,3 +259,20 @@ I had already learnt all of these techniques but haven't ever applied on any pro
 start to implement my learning practically.
 
 ___
+
+## Day 5
+
+Today I thought of continuing the course that I had started prior to this challenge. The course is within the track
+**'Machine Learning Scientist With Python'** from **DataCamp**. So, I completed the **"Machine Learning with Tree-Based Models in Python"**
+course and also did a course-based-project where I was asked to build models and find the best model for predicting the
+movie rental durations. I applied almost the same concepts and techniques as yesterday. Additional to them, I performed
+LASSO regression. LASSO regression is used for regularization of a model to prevent overfitting. Few of the snapshots of
+today task are provided below:
+
+- **Dataset Preparation and Splitting :** <br> <br>
+    ![data_preprocessing](Day5/data_preprocessing.png) <br> <br>
+- **Building and Selection of the best model :** <br> <Br>
+ ![building_models_and_selection](Day5/building_models_and_selection.png)
+
+___
+
