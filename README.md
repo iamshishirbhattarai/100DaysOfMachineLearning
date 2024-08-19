@@ -20,13 +20,14 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**      | **Learnt Topics**                                                              | **Resources used**                                                                                                            |
-|---------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                 | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model          | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
-  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
+| **Days**      | **Learnt Topics**                                                                          | **Resources used**                                                                                                            |
+|---------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+ | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
+  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
+  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
 
 
 ___
@@ -275,4 +276,88 @@ today task are provided below:
  ![building_models_and_selection](Day5/building_models_and_selection.png)
 
 ___
+
+## Day 6
+
+Today I started reading Chapter-4: **Training models** of **Hands-On Machine Learning** book. I learnt the following
+things:
+
+- I got to revised about Linear Regression model and Gradient Descent Algorithm. Gradient Descent Algorithm is a generic
+algorithm which is capable of finding optimal solution from a wide range of problems. I had already learnt this and created
+a notebook on this which you can visit by clicking here : [**Gradient Descent Notebook**](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/Gradient%20Descent%20Algorithm)
+<br> <br>
+- Additional to the pure Gradient Descent, I also read about *Batch Gradient Descent* that performs calculations over
+full training set in every epoch. <br>The next type is *Stochastic Gradient Descent* that picks a random instance in the 
+training set and computes the gradient based on the single instance.<br> There is a *Mini-Batch Gradient Descent* that
+takes a set of instances randomly and computes the gradient.
+<br> <br>
+- Learnt to implement **Polynomial Regression** as follows:
+   ```python
+  #Data generation
+  import numpy as np
+  
+  np.random.seed(42)
+  m = 100
+  X = 6 * np.random.rand(m, 1) - 3 
+  y = 0.5 * X ** 2 + X + 2 + np.random.randn(m, 1)
+  
+  #Visualizing the datas
+  import matplotlib.pyplot as plt
+
+   plt.plot(X, y, "b.")
+   plt.xlabel("X")
+   plt.ylabel("y")
+   plt.grid()
+   plt.show()
+  ```
+  
+    ![data_distribution](Day6/data_distribution.png)
+
+  ```python
+  #polynomial regression using scikit-learn
+  from sklearn.preprocessing import PolynomialFeatures
+  from sklearn.linear_model import LinearRegression
+  poly_features = PolynomialFeatures(degree = 2, include_bias = False)
+  X_poly = poly_features.fit_transform(X)
+  lin_reg = LinearRegression()
+  lin_reg.fit(X_poly, y)
+  
+  #Trying with new datas
+  X_new = np.linspace(-3, 3, 100).reshape(100, 1)
+  X_new_poly = poly_features.transform(X_new)
+  y_new = lin_reg.predict(X_new_poly)
+
+  plt.plot(X, y, "b.")
+  plt.plot(X_new, y_new, "r-", linewidth = 2, label="Predictions")
+  plt.xlabel("X")
+  plt.ylabel("Y", rotation = 0)
+  plt.legend() 
+  plt.show()
+  ```
+   ![polynomial_model](Day6/polynomial_model.png)  
+<br> <br>
+- I deeply understood about Regularization models today. The regularization is the process of encouraging the learning
+algorithms to shrink the values of the parameter to avoid overfitting during training. The three regularization models
+are explained below:
+  <br> <br>
+  **i. Ridge Regression :** It is the type of regularization model which is used when most of the variables are useful.
+<br>
+ The function minimizes: <br><br>
+ **Sum of the squared residuals + lambda * weight ^ 2**
+ <br> <br>
+   
+  **ii. Lasso Regression :** It is the type of regularization model which is used when we have to exclude some useless 
+variable i.e. it is capable of excluding useless variable from equations.
+ <br>
+ The function minimizes: <br><br>
+ **Sum of the squared residuals + lambda *  |weight|**
+    <br> <br>
+   **iii. Elastic Net Regression :** It is a middle ground between the Ridge and Lasso Regression. The regularization 
+term is a weighted sum of both ridge and lasso's regularization term, controlled with the mix ratio *r*.
+  <br>
+ The function minimizes: <br> <br>
+ **Sum of the squared residuals + r * lambda * |weight| + (1-r) * lambda * weight ^ 2**
+
+___
+ 
 
