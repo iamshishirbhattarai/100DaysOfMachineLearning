@@ -1,4 +1,5 @@
-/.idea
+*/.idea
 Day5/rental_info.csv
 /.ipynb_checkpoints
 Day6/.ipynb_checkpoints
+*/.ipynb_checkpoints

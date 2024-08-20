@@ -20,15 +20,15 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**      | **Learnt Topics**                                                                          | **Resources used**                                                                                                            |
-|---------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
- | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
-  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
-  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                   |
-
+| **Days**      | **Learnt Topics**                                                                                         | **Resources used**                                                                                                                                                                              |
+|---------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                     | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
+  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+   | [Day 7](Day7) | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
 
 ___
 
@@ -342,7 +342,7 @@ are explained below:
   <br> <br>
   **i. Ridge Regression :** It is the type of regularization model which is used when most of the variables are useful.
 <br>
- The function minimizes: <br><br>
+     The function minimizes: <br><br>
  **Sum of the squared residuals + lambda * weight ^ 2**
  <br> <br>
    
@@ -360,4 +360,60 @@ term is a weighted sum of both ridge and lasso's regularization term, controlled
 
 ___
  
+## Day 7
+
+I finished the chapter 4 about **Training Models** from the book and started reading the next chapter which is about 
+**Support Vector Machines (SVM)**. In the remaining portion of the chapter 4, there was about **Logistic Regression** 
+and **Softmax Regression** where both are used for classification problem. Presenting my readings with following points:
+
+- **Logistic Regression** is a type of regression algorithm that are used for binary classification problem. It uses 
+*Sigmoid Function* and provides the output between 0 and 1. There is a decision boundary set which impacts the output of
+the model. It can be implemented using **LogisticRegression** class in Scikit-Learn as follows:
+   ```python
+   from sklearn.linear_model import LogisticRegression
+   from sklearn.model_selection import train_test_split
+   from sklearn.metrics import accuracy_score
+  
+   X = iris.data[["petal width (cm)"]].values
+   y = iris.target_names[iris.target] == 'virginica'
+   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 42)
+   log_reg = LogisticRegression()
+   log_reg.fit(X_train, y_train)
+   y_pred = log_reg.predict(X_test)
+   score = accuracy_score(y_test, y_pred) 
+   ```
+- **Softmax Regression** is a type of regression algorithm that is used for more than two classes or in general used for 
+multiclass problem. This algorithm computes its respective output of each class and decides the class with higher score.
+In Scikit-Learn, **LogisticRegression** class works as **Softmax** whenever multiple class is provided.
+
+    ```pyton
+     X = iris.data[["petal length (cm)", "petal width (cm)"]].values
+     y = iris["target"]
+     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 42)
+
+     softmax_reg = LogisticRegression(C=30, random_state = 42) #C is the hyperparameter
+     softmax_reg.fit(X_train, y_train)
+    ```
+- **Soft Margin Classifier** also known as Support vector Classifier that allows flexibility in model by allowing some 
+mis-classification when the datas are not perfectly separable. In contrast to this, **Hard Margin Classifier** is a 
+strict classifier that tries to perfectly separate the datas to their belonging classes.
+<br> <br>
+- **Support Vector Machine** is used for both classification and regression. The main objective of SVM is to find the 
+optimal hyperplane in an N-dimensional space that can separate the data points in different classes in different feature
+space. It starts with data in a relatively low dimension and then move datas into a higher dimension and ultimately finds
+a support vector classifier that separates the higher dimensional data into classes. <br>
+<br> It uses **Kernel Functions** to transform the data into higher dimension. Well, they don't actually do the transformation
+rather only calculates the relationship between every pair of points as if they are in higher dimension. This technique
+is know as **Kernel Trick** that helps by reducing computation.
+<br> <br>
+I learnt about two types of **Kernel Function** today. They're discussed below:
+<br> <br>
+    **i. Polynomial Kernel :** It systematically increases dimensions and relationships between each pairs of observations
+are used to find a support vector classifier.
+   <br> <br>
+    **ii. Radial Kernel :** In simpler way, I understood this as that the closest observation have a lot of influence while
+farther has relatively little influence on the classification. Whichever is closer. It finds the support vector classifier in
+infinite dimensions.
+
+___
 
