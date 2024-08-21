@@ -417,3 +417,27 @@ infinite dimensions.
 
 ___
 
+## Day 8
+
+
+Today I completed the current chapter about SVM and started reading the next chapter about Decision Trees. The stuffs I learnt are listed below:
+
+- I saw few code implementations on SVM that I had learnt yesterday. Well there wasn't a proper implementation from scratch
+given, so It was just like being familiar with the syntax of each classifier and regression. I will get back to this topic,
+whenever I find opportunities to explore it in detail. Just a representative image of the non-linear classification performed
+using SVM : <br> <br>
+ ![moons_polynomial_svc_plot](Day8/moons_polynomial_svc_plot.png)
+<br><br>
+
+- I read (rather say revised) about Decision Trees. I have already seen lots of the portion while taking other
+courses. I trained, learnt about how decision trees works and also regularized hyperparameters with the help of 
+Grid search finding the optimized and the best parameters. Both classifications and regression problem can be solved
+by using Decision Tree. However, the regularization in decision tree is very necessary. If not done, the decision tree is
+prone to overfitting. I learnt about Gini INdex and Entropy; the approaches followed for dividing the tree. Additionally,
+performed an exercise which was at the end of the chapter which you can visit clicking here: 
+[Exercise_Notebook](Day8/decision_trees.ipynb)
+<br> A graphical representation of the tree from the exercise is provide below:
+<br> <br>
+    ![tree](Day8/tree.png)
+
+
