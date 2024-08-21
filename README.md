@@ -29,7 +29,7 @@ ___
   | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
   | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
    | [Day 7](Day7) | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
-
+    | [Day 8](Day8) | SVM Code familiarity, Decision Trees, Fine Tuning With Grid search                                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |                                                                             |
 ___
 
 ## Day 1 
