@@ -20,16 +20,17 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**      | **Learnt Topics**                                                                                         | **Resources used**                                                                                                                                                                              |
-|---------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                     | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
-  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-| [Day 7](Day7) | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
- | [Day 8](Day8) | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     | 
+| **Days**      | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                              |
+|---------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
+  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+| [Day 7](Day7) | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
+ | [Day 8](Day8) | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 9](Day9) | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
 ___
 
 ## Day 1 
@@ -338,15 +339,13 @@ takes a set of instances randomly and computes the gradient.
 <br> <br>
 - I deeply understood about Regularization models today. The regularization is the process of encouraging the learning
 algorithms to shrink the values of the parameter to avoid overfitting during training. The three regularization models
-are explained below:
-  <br> <br>
-  **i. Ridge Regression :** It is the type of regularization model which is used when most of the variables are useful.
-<br>
+are explained below: <br> <br>
+**i. Ridge Regression :** It is the type of regularization model which is used when most of the variables are useful.
      The function minimizes: <br><br>
  **Sum of the squared residuals + lambda * weight ^ 2**
  <br> <br>
    
-  **ii. Lasso Regression :** It is the type of regularization model which is used when we have to exclude some useless 
+    **ii. Lasso Regression :** It is the type of regularization model which is used when we have to exclude some useless 
 variable i.e. it is capable of excluding useless variable from equations.
  <br>
  The function minimizes: <br><br>
@@ -441,3 +440,50 @@ performed an exercise which was at the end of the chapter which you can visit cl
     ![tree](Day8/tree.png)
 
 
+___
+
+## Day 9
+
+Today I started learning about **Ensemble Learning** from the book. Below are few summaries on what I learnt : 
+
+- I first learnt about **Voting Classifier** which is one of the Ensemble learning methods. In this method, as defined by its
+name, it provides the aggregate of all the classifiers used or provide the class as an output with maximum votes. It performs
+better than individual classifier. There are two types of Voting Classifier. They are discussed below:
+<br> <br>
+    **i. Hard Voting Classifier** is a type of Voting Classifier that predicts the class with major votes. By default,
+scikit learn's **VotingClassifier** class performs *hard voting*.
+  <br> <br>
+   ![hard_voting](Day9/hard_voting.png)
+    <br> <br>
+    **ii. Soft Voting Classifier** is a type of Voting Classifier that predicts the class with the highest class probability,
+averaged over all the individual classifiers.In Scikit learn, we have to set voting as "soft" to enable soft voting as shown 
+in the screenshot of notebook below:
+   <br> <br>
+    ![soft_voting](Day9/soft_voting.png)
+
+
+- Got a solid concept on **Bagging**. **Bagging** stands for **Bootstrap Aggregating** and is an ensemble method that uses
+same training algorithm for every predictors but train them on different subsets of the training set. When sampling is done
+with replacement, the method is **Bagging**. If sampling is done without replacement, then it is called **Pasting**. I also
+performed **Out-Of-Bag(OOB)** evaluation. A screenshot of a notebook for bagging is attached below: 
+<br> <br>
+   ![bagging](Day9/bagging.png)
+<br> <br>
+- Performed **Random Forest** on the same dataset with the concept of bagging in the mind. It is also a type of bagging, but
+it samples both training sets as well as features. I am implementing this from the very beginning of my journey so just 
+attaching a screenshot down below: <br> <br>
+    ![random_forest](Day9/random_forest.png)
+<br> <br>
+- Got familiar with **Boosting** concept. Boosting is also an ensemble learning method that trains predictors sequentially
+, each trying to correct its predecessors. Well, there are many boosting mechanism, but today I just focused on
+**AdaBoost**. <br> <Br>
+
+- **AdaBoost** is a boosting algorithm that pays more attention to those training instances that predecessor underfits on.
+An implementation sample :
+ <br> <br>
+    ![adaboost](Day9/adaboost.png)
+
+___
+
+
+___
