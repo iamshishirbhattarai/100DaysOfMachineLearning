@@ -20,17 +20,19 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**      | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                              |
-|---------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1) | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 2](Day2) | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 3](Day3) | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 4](Day4) | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-  | [Day 5](Day5) | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
-  | [Day 6](Day6) | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-| [Day 7](Day7) | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
- | [Day 8](Day8) | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 9](Day9) | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+| **Days**        | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                              |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1)   | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 2](Day2)   | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 3](Day3)   | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 4](Day4)   | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+  | [Day 5](Day5)   | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
+  | [Day 6](Day6)   | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+| [Day 7](Day7)   | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
+ | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+ | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+  | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     | 
+
 ___
 
 ## Day 1 
@@ -342,9 +344,8 @@ algorithms to shrink the values of the parameter to avoid overfitting during tra
 are explained below: <br> <br>
 **i. Ridge Regression :** It is the type of regularization model which is used when most of the variables are useful.
      The function minimizes: <br><br>
- **Sum of the squared residuals + lambda * weight ^ 2**
- <br> <br>
-   
+ **Sum of the squared residuals + lambda * weight ^ 2** <br> <br>
+
     **ii. Lasso Regression :** It is the type of regularization model which is used when we have to exclude some useless 
 variable i.e. it is capable of excluding useless variable from equations.
  <br>
@@ -485,5 +486,39 @@ An implementation sample :
 
 ___
 
+## Day 10
+
+Today I finished reading about **Ensemble Learning**. I got introduced to a new method known as **Stacking** while reading
+this and also got a better chance to revise and know additional stuffs on **Gradient Boosting** too. Summaries of today's 
+learnings are provided below: 
+
+- Learnt about **Gradient Boosting**. **Gradient Boosting** is a type of boosting algorithm that works by performing sequential
+correction of predecessor's error but do not tweak the weights of training instances as **AdaBoost** rather fits each predictor
+using its predecessor's residual errors as labels/target. An implementation of how does it works and the direct implementation
+through Scikit Learn's **GradientBoostingRegressor** can be found in the following screenshot:
+<br> <br>
+
+    ![gradient_boosting_working](Day10/gradient_boosting_working.png) <br> <br>
+    ![gradient_boosting](Day10/gradient_boosting.png) <br> <br>
+
+- **Learning Rate** in **Gradient Boosting** is one of the most important _hyperparamemter_. It is a number between 0 and 1 that
+adjusts the shrinkage factor i.e. in general, controls how fast the model is learning. In another words, it determines 
+the contribution of each tree in the final outcome. Decreasing the learning rate has to be compensated by
+increasing the number of estimators in order for the ensemble to reach a certain performance i.e. there is a trade-off 
+between **learning rate** and **no- of estimators**.
+<br> <br>
+- **Finding optimal number of trees** is one of the must done task while performing **Gradient Boosting**. We can use 
+previously used fine tuning methods with **Grid Search** or **Random Search**. But, **Gradient Boosting** offers _n_iter_no_change_
+hyperparameter that allows us to put integer values (say 8) that helps to automatically stop adding more trees if it observed that
+the last 8 trees didn't help. <br> <br>
+    ![optimal_estimators](Day10/optimal_estimators.png)
+<br> <br>
+- Got to know about another **Ensemble Learning** method : **Stacking**. It seems similar to the **Voting Classifier** but in this
+learning, there is a model to perform the aggregation of the predictions. Such model is known as _blender_ or _meta learner_ and 
+the model in which the original datasets are trained is known as base model. This was a great learning, and I performed the
+same task that I did in **Voting Classifier** yesterday with **Stacking** and found working comparatively well. A screenshot
+of the notebook is attached below: <br> <br>
+    ![stacking](Day10/stacking.png)
 
 ___
+
