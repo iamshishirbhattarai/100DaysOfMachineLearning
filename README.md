@@ -32,7 +32,7 @@ ___
  | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
  | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
   | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     | 
-
+   | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
 ___
 
 ## Day 1 
@@ -522,3 +522,30 @@ of the notebook is attached below: <br> <br>
 
 ___
 
+## Day 11
+
+Today I started a course within the **Machine Learning Scientist With Python** from  **DataCamp**. The course was
+**Extreme Gradient Boosting with XGBoost**. So, today it was the day for **XGBoost**. Compiling my learnings in following
+points:
+
+- **XGBoost** is an optimized gradient-boosting machine learning library that provides greater speed and performance.
+It is one of the most popular algorithm that has consistently outperformed single-algorithm methods. As compared to normal
+gradient boosting that we performed yesterday, **XGBoost** is more scalable, has built in regularization, provides
+parallelization, sophisticated tree-pruning and many other advanced features. A quick example of **XGBoost** implementation 
+is shown below: <br> <br>
+    ![quick_xgboost_example](Day11/quick_xgboost_example.png) <br> <br>
+
+- Learnt about when to use **XGBoost** and when not to. It is used whenever there are large no. of training samples and has 
+mixture of categorical and numerical features or just numerical features while it is not used in Image recognition,
+computer vision, NLP and understanding problems and those problems with very few training samples.
+<br> <br>
+- Learnt about **Objective(Loss) Functions** and regularization in **XGBoost**.
+<br> <br>
+- Performed hyperparameter tuning using **Grid Search** and **Randomized Search**. Each has their own advantages and limitations.
+A Quick example of **GridSearch** implementation is as follows: <br> <br>
+    ![grid_search_xgb](Day11/grid_search_xgb.png)
+<br> <br>
+- Performed **XGBoost** using pipeline and also tuned hyperparameters in pipeline. These are as similar as we previously 
+performed while doing **California Housing Price Prediction** project. So, it was just a good revision. 
+    
+___
