@@ -33,6 +33,7 @@ ___
  | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
   | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     | 
    | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
+    | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
 ___
 
 ## Day 1 
@@ -548,4 +549,38 @@ A Quick example of **GridSearch** implementation is as follows: <br> <br>
 - Performed **XGBoost** using pipeline and also tuned hyperparameters in pipeline. These are as similar as we previously 
 performed while doing **California Housing Price Prediction** project. So, it was just a good revision. 
     
+___
+
+## Day 12
+
+Today I started learning about **Dimensionality Reduction**. Let me compile my learnings in the following points:
+
+- **Curse of Dimensionality**: Having very large no. of features for each training instances, makes not only training 
+extremely slow but also make it much harder to find the solution. The problem is referred to as the **curse of dimensionality**
+Also, the more dimensions the training set has, the greater the risk of overfitting is. So, these problems are often addressed
+by **Dimensionality Reduction**.<br> <br>
+- There are basically two approaches for dimensionality reduction: <br><br>
+  **i. Projection :** It is an approach for dimensionality reduction that reduces the datas in higher dimensions to the lower
+dimensions assuming that they can be represented linearly. <br> <br>
+  **ii. Manifold Learning :** It is another approach for dimensionality reduction that represents the data in higher dimensions
+to the lower dimensions. Unlike projection methods, manifold learning techniques are non-linear and aim to uncover the intrinsic
+geometry(complex pattern or geometry that can't be represented by simple linear models) of the data. 
+<br> <br>
+- **PCA (Principal Component Analysis)** is the most popular dimensionality reduction algorithm that helps to reduce higher
+dimension data into the lower (two or third) dimensions dataset. It follows **Projection** approach. There are various applications
+of PCA. Nowadays, it is majorly used for **Visualization** of higher dimensions data in two or third dimensions to perform **EDA**.
+Previously, it was also used for **Data Compression** and **Speeding up training of a supervised learning model** but nowadays since
+we have advanced learning algorithm like **Neural Networks** we don't use it much for these purposes. The following figure demonstrates
+a PCA operation : <br> <br>
+   ![pca_demonstration](Day12/pca_demonstration.png) <br> <br>
+- **PCA in Scikit Learn :** In Scikit-Learn, **PCA** can be implemented as follows: <br> <br>
+
+    **Dimensionality Reduction** <br> <br>
+     ![pca_fitting](Day12/pca_fitting.png) <br>
+     Here, _explained_variance_ratio__ indicates how much % of the dataset's variance lies along the Principal Component.
+    <br> <br>
+    **Dimensionality Reconstruction** <br> <br>
+    ![pca_reconstruction](Day12/pca_reconstruction.png)
+    <br> <br>
+
 ___
