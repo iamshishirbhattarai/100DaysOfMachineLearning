@@ -20,20 +20,21 @@ ___
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**        | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                              |
-|-----------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1)   | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 2](Day2)   | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 3](Day3)   | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 4](Day4)   | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-  | [Day 5](Day5)   | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
-  | [Day 6](Day6)   | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-| [Day 7](Day7)   | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE) |
- | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
- | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
-  | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     | 
-  | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                   |
-   | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                     |
+| **Days**        | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                                                                                  |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1)   | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 2](Day2)   | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 3](Day3)   | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 4](Day4)   | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+  | [Day 5](Day5)   | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+  | [Day 6](Day6)   | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+| [Day 7](Day7)   | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE)                                                     |
+ | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+  | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         | 
+  | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+   | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
 ___
 
 ## Day 1 
@@ -584,3 +585,43 @@ a PCA operation : <br> <br>
     <br> <br>
 
 ___
+
+## Day 13
+
+I continued studying about **Dimensionality Reduction** from the book and also took and finished the course from **Datacamp**'s
+track. Well, I learnt a lot of stuffs today. So, just summarizing in few point below:
+
+- Learnt how we can perform **Feature Selection** from the datasets using various techniques. Some of the techniques may
+involve the following: <br> <br>
+  i. Removing the column if it has higher number of null values. <br> <br>
+  ii. Removing highly correlated features as hardly new information is brought by highly correlated features. <br> <br>
+      ![heatmap_important](Day13/heatmap_important.png)
+  <br> <br> Here, _Buttock height_ and _Crotch height_ has higher correlation, so one can be dropped to reduce number of 
+features. <br> <br> 
+  iii. Using **Recursive Feature Elimination (RFE)** method using various estimators such as LogisticRegression, RandomForest
+or can also combined these features and perform voting.
+<br> <br>
+- Performed **Feature Extraction** using **PCA** that I have mentioned yesterday also. But gone in little bit depth today.
+I learnt about choosing the right number of dimensions or **Principal Component** selection. I used few methods as mentioned below:
+<br> <br> 
+
+    **i. Variance Threshold :** Providing the variance we want, we can get the dimensions reduction in the dataset. A screenshot
+of implementation attached below: <br> <br>
+        ![variance_threshold](Day13/variance_threshold.png) <br> <br>
+
+    **ii. Random Search :** With the use of **Random Search** we can find the best no. of components as follows: <br> <br> 
+        ![random_search](Day13/random_search.png) <br> <br>
+
+    **iii. Elbow Method :** We can use elbow method to determine the number of components. For the figure below, we can
+conclude that 3 _n_components_ would be fine. <br> <br> 
+        ![elbow_component_selection](Day13/elbow_component_selection.png) <br> <br>
+
+- Performed **Compression** using PCA. And, also decompressed the images. You can see both before and after compression
+part of datasets as follows: <br> <br>
+   **Before Compression :** <br> <br>
+        ![before_compression](Day13/before_compression.png) <br> <br>
+   **After Compression, decompressed image :** <br> <br>
+        ![after_compression](Day13/after_compression.png) <br> <br>
+ 
+    Pretty good !! Isn't it? That's all for today !!
+
