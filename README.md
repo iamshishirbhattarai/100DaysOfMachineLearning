@@ -35,6 +35,7 @@ ___
   | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
+    | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-compiled-notes                                                                                                                                                                                                                                 |
 ___
 
 ## Day 1 
@@ -624,4 +625,37 @@ part of datasets as follows: <br> <br>
         ![after_compression](Day13/after_compression.png) <br> <br>
  
     Pretty good !! Isn't it? That's all for today !!
+
+___
+
+## Day 14
+
+Today I thought of starting a project. I researched for a while but couldn't find the one which matches my level (of course
+basic) and also is satisfactory at the same time. After researching for almost an hour, I thought of coming back to the 
+**Iris Flower Classification** and doing it from the scratch by own. I didn't take any reference and just started performing
+everything sequentially. Created a rough notebook which you can directly visit from here : [Notebook](Day14/rough_iris_flower_classification.ipynb)
+
+- Loaded the dataset from **sklearn.datasets**. <br> <br>
+- Converted the data into dataframe and also mapped labels with their respective names. <br> <br>
+
+  ![dataset_loading_conversions](Day14/dataset_loading_conversions.png) <br> <br>
+- Checked for null values and observed the dataset. <br> <br>
+- Visualized the data and tried to reach some conclusions. Found that **setosa** is well-separated from other two classes.
+<br> <br>
+    ![iris_pairplot](Day14/iris_pairplot.png) <br> <br>
+
+- Used **Random Forest**: an ensemble learning algorithm to fit the model. It worked with 100% accuracy in training set, 
+96% in Cross-validation and again 100% in test set. <br> <br>
+
+    ![model_fitting_testing](Day14/model_fitting_testing.png) <br> <br>
+    
+    Also, told **ChatGpt** to generate random array for the model and tested, well it predicted accurately !! <br> <br>
+
+But I think I just made the things little bit complex, when it can be done comparatively easily. Easy in a sense that I could
+have tried other algorithm which are lesser complex as well as cheaper when it comes to bigger problems. But anyway, it was 
+just a try !! So, that's fine !! I'll try to build a web interface and deploy this project using flask with some required 
+changes. That's all for today !!
+
+___
+
 
