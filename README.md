@@ -38,7 +38,10 @@ ___
    | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
    | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-Compiled-Notes                                                                                                                                                                                                                                 |
     | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                  | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
+_____
 
+
+___
 ## Day 1 
 
 ### California Housing Price Prediction
