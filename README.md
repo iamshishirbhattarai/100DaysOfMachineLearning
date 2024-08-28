@@ -18,6 +18,7 @@ ___
 | **S.N.** | **Project Title**                                                                                                                                                                                | **Status** |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | 1.       | [**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/California%20Housing%20Price%20Prediction/California_housing_price_prediction.ipynb) | ✅          |
+ | 2.       | [**Iris Flower Classification**](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/Iris%20Flower%20Classification)                                                               | ✅          |
 ## Topics Learnt Every Day
 
 | **Days**        | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                                                                                  |
@@ -35,8 +36,8 @@ ___
   | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
-    | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-Compiled-Notes                                                                                                                                                                                                                                 |
-___
+   | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-Compiled-Notes                                                                                                                                                                                                                                 |
+    | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                  | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
 
 ## Day 1 
 
@@ -658,4 +659,16 @@ changes. That's all for today !!
 
 ___
 
+## Day 15
 
+Deployed the project **Iris FLower Classification** using **Flask**. For web interface, used **HTML** and **CSS**. Below
+are some of the screenshots of the interface and results based on inputs:
+<br> <br>
+![setosa_prediction](Day15/setosa_prediction.png) <br> <br>
+![versicolor_prediction](Day15/versicolor_prediction.png) <br> <br>
+![virginica_prediction](Day15/virginica_prediction.png)
+<br> <br>
+
+Visit the full project folder here: [Iris Flower Classification](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/Iris%20Flower%20Classification)
+
+___
