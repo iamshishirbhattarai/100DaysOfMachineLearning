@@ -38,6 +38,9 @@ ___
    | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
    | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-Compiled-Notes                                                                                                                                                                                                                                 |
     | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                  | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
+    | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+
+
 _____
 
 
@@ -675,3 +678,58 @@ are some of the screenshots of the interface and results based on inputs:
 Visit the full project folder here: [Iris Flower Classification](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/Iris%20Flower%20Classification)
 
 ___
+
+## Day 16
+
+I started learning about **Unsupervised Learning** from the book. I focused on one of the clustering algorithms : **K-Means**.
+The learnings are summarised in the following points:
+<br> <br>
+- **Unsupervised learning** finds patterns in data. The dataset provided is unlabeled. The various tasks of **Unsupervised
+Learning** are **Clustering**, **Anomaly Detection**, **Density Estimation**, etc.
+<br> <br>
+- **Clustering**  is the task of identifying similar instances and assigning them to clusters, or groups of similar
+instances. Some of the popular **Clustering** algorithms are **K-means, DBSCAN, Hierarchical Clustering**, etc. The clustering
+has wide variety of applications including **Customer Segmentation**, **Data analysis**, **Dimensionality Reduction**, 
+**Feature Engineering**, **Anomaly Detection**, **Semi-Supervised Learning**, **Search Engines** and **Image Segmentation**.
+<br> <br>
+- Today I specifically learnt about **K-means**. It is one of the simple algorithm that clusters the instances with similar
+characteristics. The algorithm follows the following key steps: <br> <br>
+     **i.** A random cluster center is generated for each of the clusters. <br> <br>
+     **ii.** The distance to these cluster centers is computed for each point to assign to the closest cluster. <br> <br>
+     **iii.** The cluster centers are recomputed. <br> <br>
+     **iv.** This iteration of assigning points to the recomputed cluster centers is performed a predefined numbers
+            of times.
+<br> <br>
+- Implemented **Kmeans** using Scikit-Learn. <br> <br>
+    
+    ```python
+    from sklearn.cluster import KMeans
+    from sklearn.datasets import make_blobs
+    import numpy as np
+    
+    blob_centers = np.array([[ 0.2,  2.3], [-1.5 ,  2.3], [-2.8,  1.8],
+                             [-2.8,  2.8], [-2.8,  1.3]])
+    blob_std = np.array([0.4, 0.3, 0.1, 0.1, 0.1])
+    X, y = make_blobs(n_samples=2000, centers=blob_centers, cluster_std=blob_std,
+                      random_state=7)
+    
+    k = 5
+    kmeans = KMeans(n_clusters=k, n_init=10, random_state=42)
+    y_pred = kmeans.fit_predict(X)
+    plt.scatter(X[:,0], X[:,1], c=y, s=1)
+    plt.grid()
+    plt.show()
+    ```
+  <br> <br>
+
+  ![kmeans](Day16/kmeans.png)
+
+___
+   
+    
+    
+    
+    
+    
+    
+  
