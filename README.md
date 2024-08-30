@@ -21,24 +21,25 @@ ___
  | 2.       | [**Iris Flower Classification**](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/Iris%20Flower%20Classification)                                                               | ✅          |
 ## Topics Learnt Every Day
 
-| **Days**        | **Learnt Topics**                                                                                               | **Resources used**                                                                                                                                                                                                                                  |
-|-----------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Day 1](Day1)   | EDA, Splitting with random & stratified sampling, correlations                                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
- | [Day 2](Day2)   | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
- | [Day 3](Day3)   | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
- | [Day 4](Day4)   | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                           | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-  | [Day 5](Day5)   | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-  | [Day 6](Day6)   | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-| [Day 7](Day7)   | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels       | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE)                                                     |
- | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
- | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-  | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         | 
-  | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-   | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-   | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
-   | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                 | Self-Compiled-Notes                                                                                                                                                                                                                                 |
-   | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                  | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
-   | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+| **Days**        | **Learnt Topics**                                                                                                          | **Resources used**                                                                                                                                                                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Day 1](Day1)   | EDA, Splitting with random & stratified sampling, correlations                                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 2](Day2)   | Imputation, Estimators, Transformers, Predictors, get_dummies vs OneHotEncoder                                             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 3](Day3)   | Feature Scaling, Custom Transformers, Pipelines, ColumnTransformers                                                        | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 4](Day4)   | Training and Selecting Model, Evaluating Model, Fine Tuning The Model                                                      | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+  | [Day 5](Day5)   | Fine Tuning Decision Tree & Random Forest, Lasso Regression                                                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+  | [Day 6](Day6)   | Gradient Descent Algorithm, Polynomial Regression, Ridge Vs. Lasso, Elastic Net Regression                                 | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+| [Day 7](Day7)   | Logistic Regression, Softmax Regression, Soft Margin Classification, Support Vector Machines, SVM Kernels                  | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br><br> [StatQuest with Josh Starmer](https://www.youtube.com/watch?v=efR1C6CvhmE)                                                     |
+ | [Day 8](Day8)   | SVM Code Implementation, Decision Tree, Hyperparameter Tuning                                                              | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+ | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+  | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                                         | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         | 
+  | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+   | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
+   | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                            | Self-Compiled-Notes                                                                                                                                                                                                                                 |
+   | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                             | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
+   | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 ___
 ## Day 1 
@@ -721,9 +722,47 @@ characteristics. The algorithm follows the following key steps: <br> <br>
   ![kmeans](Day16/kmeans.png)
 
 ___
-   
+
+## Day 17
+
+Continued reading about **Clustering Algorithms**. Today I thought of taking the related course from **DataCamp** and 
+took a course on **Clustering Analysis in Python** In this course, I was first introduced to **Hierarchical Clustering**
+and then **Kmeans**. Let us go a little bit deeper in both of them
+
+- **Hierarchical clustering** is a method of cluster analysis in data mining that creates a hierarchical representation
+of the clusters in a dataset. I implemented this clustering using _Scipy_. Learnt to create a distance matrix using _linkage_
+and learnt about various methods that we can use within _linkage_. After that, created cluster labels with _fcluster_
+and then visualized the clusters using both _Seaborn_ and _matplotlib_ but found _seaborn_ more effective as well as
+easier. <br> <br>
+    ![hierarchical_clustring_code](Day17/hierarchical_clusterin_code.png) <br> <br>
+    ![hierarchical_clustering_visualization](Day17/hierarchical_clustering.png) <br> <br>
+- Learnt about a technique to find the number of clusters in **Hierarchical Clustering** known as **Dendrogram**. It is a 
+branching diagram that demonstrates how each cluster is composed by branching out into its child nodes. It helps in showing
+progressions as clusters are merged. <br> <br>
+    ![dendrograms](Day17/dendrogram.png) <br> <br>
+By the above dendrogram, we can have some idea about number of clusters and can be chosen as 2.
+<br> <br>
+- Limitation of **Hierarchical Clustering** is that there is quadratic increase of runtime as data points increases. So, 
+it's not feasible for large dataset. <br> <br>
+- **K-means** overcomes the limitation of **Hierarchical Clustering** i.e. it runs significantly faster on larger datasets.
+Yesterday I did implement the algorithm with the help of _Scikit-Learn_. Today since the course was designed on _Scipy_,
+I got introduced with the syntax. Generated cluster centers with _Kmeans()_ and cluster labels with _vq()_.
+<br> <br>
+    ![kmeans_code](Day17/kmeans_code.png) <br> <br>
+    ![kmeans](Day17/kmeans.png) <br> <br>
+- There are many methods to determine the number of clusters in **Kmeans**. But none of them are absolute method to find 
+the right numbers of clusters. Today I applied **elbow method** to detect number of clusters. Distortion decreases with an
+increasing number of clusters i.e. becomes zero when no. of clusters = no. of points. So, **Elbow Plot** is a line plot
+between cluster centers and distortion. However, this only gives an indication of optimal K and doesn't
+always pinpoint how many k (no. of clusters). <br> <br>
+    ![elbow_method_code](Day17/elbow_method_code.png) <br> <br>
+    ![elbow_method](Day17/elbow_method.png) <br> <br>
+With the above plot, we can take no. of clusters as 2. There is another method known as _silhouette_ which we will explore
+tomorrow. <br> <br>
+- There are few limitations of **kmeans**. Finding the right number of clusters, impact of seeds and biased towards equal
+clusters are some of them. 
     
-    
+___ 
     
     
     
