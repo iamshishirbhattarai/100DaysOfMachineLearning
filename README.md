@@ -34,13 +34,17 @@ ___
  | [Day 9](Day9)   | Ensemble learning Intro, Voting Classifiers and its types, Bagging, Pasting & Random Forest, Boosting, AdaBoost            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
   | [Day 10](Day10) | Gradient Boosting, Learning rate and number of estimator, Stacking                                                         | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         | 
   | [Day 11](Day11) | XGBoost introduction, Regularization, Fine Tuning, Pipeines, Tuning using pipelines                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-   | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-   | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
+  | [Day 12](Day12) | Curse of dimensionality, Approaches of dimensionality reduction, PCA, Dimensionality reduction & reconstruction            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+  | [Day 13](Day13) | Feature selection, Feature Extraction, Compression & Decompression using PCA, Variance Threshold, Elbow Mehhod             | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | 
    | [Day 14](Day14) | Initiated a project and prepared a rough notebook (Included many learnt topics)                                            | Self-Compiled-Notes                                                                                                                                                                                                                                 |
    | [Day 15](Day15) | Learnt Deployment using Flask and deployed yesterday's project                                                             | [Youtube](https://www.youtube.com/watch?v=MxJnR1DMmsY&t=838s)                                                                                                                                                                                       |
    | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 18](Day18) | Silhouette Coefficient, Document Clustering, Image Segmentation Using Kmeans                                               | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
+   
 
+
+  
 ___
 ## Day 1 
 
@@ -763,6 +767,43 @@ tomorrow. <br> <br>
 clusters are some of them. 
     
 ___ 
+
+## Day 18
+
+Today firstly I completed **Cluster Analysis In Python** course from **DataCamp**. Only the last chapter was remained where
+I simply learnt about real world implementation of clustering. I performed **Clustering** to 
+find the dominant colors in image and also performed Document clustering that involves cleaning data before processing,
+determining the importance of the terms in a document (in TF-IDF matrix), clustering of the TF-IDF matrix and finding top
+documents, terms in each cluster. Also performed some basic checks, visualized and found top items in clusters while dealing 
+with multiple features clustering. <br> <br>
+After completing the course, I came back to the book and continued where I left off. Summarizing my learnings from the book
+in the following points: <br> <br>
+- As promised, learnt about _silhouette coefficient_. The **silhouette coefficient** is a measure used to evaluate the 
+quality of clusters in a clustering algorithm, such as K-means. It quantifies how well each data point fits within its 
+assigned cluster compared to other clusters. The silhouette coefficient combines both cohesion (how close the points in
+a cluster are) and separation (how distinct or far away a cluster is from other clusters). Applied **Silhouette Coefficient**
+to find the optimal numbers of clusters in _Scikit Learn_. <br> <br>
+    ![silhouette_coefficient_implementation](Day18/silhouette_coefficient_implementation.png) <br> <br>
+    ![silhouette_coefficient](Day18/silhouette_coefficient.png) <br> <br>
+
+As we can clearly see from the above figure that **at K=4**, the Silhouette Coefficient is higher. A coefficient close to +1 
+means that the instance is well inside its own cluster and far from other clusters, while a coefficient close to 0 means 
+that it is close to a cluster boundary; finally, a coefficient close to –1 means that the instance may have been assigned 
+to the wrong cluster. So, **K=4** might be the right option. However, **K=5** is also pretty good, so it's better to apply
+and choose the better result at the end. <br> <br>
+- Performed **Image Segmentation** using Clustering. It is the task of partitioning an image into multiple segments. Here, 
+I did color segmentation, that generally assigns pixel with similar colors to the same segment. You can see a simple 
+implementation of color segmentation below: <br> <br>
+
+    **The Original Image:** <br> <br>
+    ![original_image](Day18/original_image.png) <br> <br>
+    **Code Implementation:** <br> <br>
+    ![image_segmentation_code](Day18/image_segmentation_code.png) <br> <br>
+    **Segmented Image:** <br> <br>
+    ![segmented_image](Day18/segmented_image.png) <br> <br>
+
+___
+    
     
     
     
