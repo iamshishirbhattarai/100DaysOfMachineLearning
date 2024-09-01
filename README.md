@@ -8,7 +8,7 @@ This is just a pre-setup and things are added as exploration continues !!
 
 | **S.N.** | **Books and Lessons (Resources)**                                                                                                 | **Status** |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|------------| 
-| **1.**   | [**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**](https://github.com/ageron/handson-ml3)                   | ⏳          |
+| **1.**   | [**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Part-I)**](https://github.com/ageron/handson-ml3)          | ✅          |
 | **2.**   | [**Machine Learning Scientist With Python**](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | ⏳          |
 
 ___
@@ -41,10 +41,12 @@ ___
    | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 18](Day18) | Silhouette Coefficient, Document Clustering, Image Segmentation Using Kmeans                                               | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
+    | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    
 
 
-  
+
+
 ___
 ## Day 1 
 
@@ -804,6 +806,52 @@ implementation of color segmentation below: <br> <br>
 
 ___
     
+## Day 19
+
+I continued studying about clustering from the book. 
+
+
+- Learnt about **DBSCAN** algorithm. A small distance _epsilon_ is considered. Randomly a _core instance_ is taken and 
+the neighbors within the _epsilon_ distance belong to the same cluster. If those neighbors consists of **min_samples**
+instances as defined, then they are also considered as **_core instance_** otherwise they are **_non-core instances_** and aren't
+capable of expanding the cluster. Instance that is not a core instance or isn't within its neighborhood is considered an 
+anomaly. In Scikit-Learn, an instance that's anomaly is assigned with the label -1. We can simply implement **DBSCAN**
+as follows: <br> <br>
+    ```python
+    from sklearn.cluster import DBSCAN
+    from sklearn.datasets import make_moons
+    
+    X,y = make_moons(n_samples=1000, noise=0.05)
+    dbscan = DBSCAN(eps=0.05, min_samples=5)
+    dbscan.fit(X)
+    ```
+
+    But **DBSCAN** doesn't have predict function to predict the cluster for new instances so using some classification 
+algorithm, we can perform the prediction task. <br> <br>
+- Simply Got Introduced with other various clustering algorithms such as **Agglomerative clustering**, **BIRCH**, **Mean-shift**
+**Affinity propagation** and **Spectral clustering**. <br> <br>
+
+- Learnt about **Gaussian Mixture Model (GMM)**. It is a probabilistic model which assumes that the datas are generated from a
+combination of several Gaussian distributions. **Gaussian Distribution** is a distribution with most of the datas gathered
+around the center(mean) and fewer points away from the center. It generally form a shape of bell. In **GMM**, each Gaussian
+represents a cluster of data. It first make some initial guesses of number of Gaussian's and where they might be. After that
+performs **Expectation-Maximization (EM)** algorithm where in **E** it calculates the probability of each points belonging
+to each gaussian (cluster) and in **M** it adjusts the parameter of Gaussians to better fit the datas based on the probabilities
+calculated in **E-step**. This process is repeated until the model stabilizes. <br> <br>
+
+    ![Gaussian Model Mixture](Day19/gaussian_model_mixture.png) <br> <br>
+- **Bayesian GMM** is also a type of GMM. Rather than manually finding the optimal number of clusters, use of
+this model provides us the weight equals or near to zero for the unnecessary clusters. Implementation for the same problem
+as above is done below with number of clusters as 15. <br> <br>
+    ![Bayesian_GMM](Day19/Bayesian_GMM.png) <br> <br>
+
+
+**IMPORTANT : With this I completed the Machine Learning Portion i.e. Part I of the book. Now, the rest of the parts
+consists of the Deep Learning Things which I will be covering on DeepLearning challenge in the future !!**
+
+___
+
+
     
     
     
