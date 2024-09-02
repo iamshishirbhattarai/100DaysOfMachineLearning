@@ -41,7 +41,8 @@ ___
    | [Day 16](Day16) | Unsupervised Learning, Applications, Clustering, K-means                                                                   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 18](Day18) | Silhouette Coefficient, Document Clustering, Image Segmentation Using Kmeans                                               | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
-    | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+   | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
+    | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    
 
 
@@ -851,9 +852,20 @@ consists of the Deep Learning Things which I will be covering on DeepLearning ch
 
 ___
 
+## Day 20
 
+As you know I completed the book portion and now I am on my way to finish the **Datacamp** track. So, following the track
+I learnt about **Preprocessing for Machine Learning in Python**. I have almost applied everything in my first project 
+[**California Housing Price Prediction**](https://github.com/iamshishirbhattarai/Machine-Learning/tree/main/California%20Housing%20Price%20Prediction)
+which you can visit with the link provided. Simply, the course was all about Standarization, Log Normalization, Feature Scaling,
+Standardized data and Modeling, Encoding of Binary Variables, One hot encoding, engineering numerical features, text features
+(just a surface introduction) and feature selection. I spent about 3 hours in this course and it was quite a good revision
+with the stuffs. Almost documented about everything in the previous days, which you can visit if you want :) <br> <br>
+ **A Sample Code** <br> <br>
+ ![encoding](Day20/encoding.png)
+That's all for today !!!
     
-    
+___   
     
     
   
