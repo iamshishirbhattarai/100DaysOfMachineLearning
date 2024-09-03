@@ -42,8 +42,10 @@ ___
    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 18](Day18) | Silhouette Coefficient, Document Clustering, Image Segmentation Using Kmeans                                               | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
    | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-    | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-   
+   | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+    | [Day 21](Day21) | Time series data, Loading/Reading Auditory datas, Auditory Envelope, Tempogram, Spectrogram                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
+
 
 
 
@@ -866,6 +868,28 @@ with the stuffs. Almost documented about everything in the previous days, which 
 That's all for today !!!
     
 ___   
-    
+
+## Day 21
+
+Today I started the another course from the **DataCamp** and the course is about **Machine Learning for Time Series Data in Python**.
+Learnings are compiled in the following points.
+
+- **Time Series Data** is data that changes overtime. It at least consists of a series that consist data and another series
+consisting timepoints. <br> <br>
+  ![time_series_plot](Day21/time_series_plot.png) <br> <br>
+- Performed loading and reading auditory data using **glob** and **librosa** library. <br> <br>
+    ![audio_load_read](Day21/audio_load_read.png) ![audio_visual](Day21/audio_visual.png) <br> <br>
+- Read about **Auditory Envelope** The auditory envelope refers to the smooth curve that outlines the extremes of an audio
+signal's waveform in the time domain. It represents the variation in amplitude (loudness) of a sound over time, essentially
+capturing the overall shape of the signal's amplitude fluctuations. Implemented by rectifying the audio and rolling the rectified
+audio. <br> <br> **Original Audio:** <br> <br> ![original_audio](Day21/original_audio.png) <br> <br> **Audio Envelope:** <br> <br>
+    ![audio_envelope](Day21/audio_envelope.png) <br> <br>
+- Read about **Tempogram** that estimates the tempo of a sound overtime. And also the **Spectogram** that is a collection of
+windowed **Fourier Transforms** over time. **Fourier transforms** converts a single timeseries into an array that describes the timeseries
+as a combination of oscillations. Calculated the **STFT** and spectral features and also visualized the spectrogram using 
+Matplotlib. Just a sample code is provided below <br> <br>
+    ![spectogram](Day21/spectogram_code.png) <br> <br> ![spectogram](Day21/spectrogram.png) 
+
+___
     
   
