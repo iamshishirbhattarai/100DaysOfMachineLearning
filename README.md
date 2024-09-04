@@ -44,6 +44,9 @@ ___
    | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
     | [Day 21](Day21) | Time series data, Loading/Reading Auditory datas, Auditory Envelope, Tempogram, Spectrogram                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+    | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
+
 
 
 
@@ -891,5 +894,22 @@ Matplotlib. Just a sample code is provided below <br> <br>
     ![spectogram](Day21/spectogram_code.png) <br> <br> ![spectogram](Day21/spectrogram.png) 
 
 ___
-    
+
+## Day 22
+
+Continued the same course **Machine Learning for Time Series Data in Python** and got it completed today. Learnings are 
+compiled in few points below: <br> <br>
+- Predicted the data over time and also visualized. Performed interpolation wherever the data was missing. Interpolation
+is a technique used to estimate unknown values that fall within the range of known data points. By using existing data, 
+interpolation creates a continuous function to predict values at intermediate points. Common methods include linear 
+interpolation, which connects points with straight lines, and spline interpolation, which uses piecewise polynomials for
+smoother estimates. <br> <br>
+- Used Rolling window to transform data. A common transformation to apply to data is to standardize its mean and variance 
+over time. <br> <br>
+- Created features from the past with time shifting. Performed Cross Validating Time Series Data. <br> <br>
+    ![features_from_the_past](Day22/features_from_the_past.png)
+Just had the understanding today and simply performed the inbuilt exercises of the course, will come back to this whenever
+required. Thank you :)
+
+___
   
