@@ -42,9 +42,11 @@ ___
    | [Day 17](Day17) | Hierarchical clustering Implementations, Dendrograms and Limitations, K-means Implementation, Elbow-method And Limitations | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 18](Day18) | Silhouette Coefficient, Document Clustering, Image Segmentation Using Kmeans                                               | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3) <br> <br> [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) |
    | [Day 19](Day19) | DBSCAN, Gaussian Model Mixture, Bayesian Gaussian Model Mixture                                                            | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
-   | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-    | [Day 21](Day21) | Time series data, Loading/Reading Auditory datas, Auditory Envelope, Tempogram, Spectrogram                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-    | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
+   | [Day 21](Day21) | Time series data, Loading/Reading Auditory datas, Auditory Envelope, Tempogram, Spectrogram                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+    | [Day 23](Day23) | One hot encoding, dummmy encoding, Binarizing And Binning, Dealing with data issues                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
 
 
 
@@ -910,6 +912,46 @@ over time. <br> <br>
     ![features_from_the_past](Day22/features_from_the_past.png)
 Just had the understanding today and simply performed the inbuilt exercises of the course, will come back to this whenever
 required. Thank you :)
+
+___
+
+## Day 23
+
+Today I started the next course about **Feature Engineering for Machine Learning in Python**. There were almost similar things
+I learnt in the past. I did have all those concepts but I went a little bit deeper with the concepts. Learnings are compiled
+in the following points: <br> <br>
+
+- Revised about Dummy encoding and One hot encoding in **pandas**. Syntactically, if I have to talk, then there is just one
+difference of adding **drop_first = True** in dummy encoding. While in implementation, the difference is Dummy encoding 
+omits one category to avoid multi collinearity, while one-hot encoding includes a binary column for every category.
+<br> <br> **One Hot Encoding** <br>
+    ```python
+     pd.get_dummies(df, columns=['Country'], prefix='C')
+    ```
+
+    **Dummy Encoding** <br>
+    ```python
+    pd.get_dummies(df, columns=['Country'], drop_first=True, prefix='C')
+    ```
+<br>
+
+- Also performed **binarizing** and **binning** in numerical variables.**Binarizing** converts data into binary format (0 or 1),
+while **binning** groups continuous values into discrete intervals or bins. The implementation can be seen below: <br> <br>
+**Binarizing :** <br>
+    ```python
+    df['Binary_violation'] = 0
+    df.loc[(df['Number_of_violations']>0, 'Binary_violation']=1)]
+    ```
+  <br> <br>
+
+   **Binning :** <br> <br>
+    ![binning_code](Day23/binning_code.png) <br> <br>
+- Got to understand about how missing values exists in the dataset. This can be due to data not being properly collected, 
+collection and management errors, data intentionally being omitted or could be created due to transformation of the data. 
+And also, revised about dealing with missing values as well as other data issues such as bad characters and other stray 
+characters.
+ 
+
 
 ___
   
