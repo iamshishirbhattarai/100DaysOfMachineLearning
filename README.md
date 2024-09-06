@@ -45,7 +45,9 @@ ___
    | [Day 20](Day20) | Data Preprocessing, Standardizing Data, Feature Engineering, Feature Selection in Machine Learning                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
    | [Day 21](Day21) | Time series data, Loading/Reading Auditory datas, Auditory Envelope, Tempogram, Spectrogram                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-    | [Day 23](Day23) | One hot encoding, dummmy encoding, Binarizing And Binning, Dealing with data issues                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 23](Day23) | One hot encoding, dummmy encoding, Binarizing And Binning, Dealing with data issues                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 24](Day24) | Dealing with skewed data, Outliers, Standardizing the text data, CountVectorizer, TF-IDF                                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
+
 
 
 
@@ -949,9 +951,27 @@ while **binning** groups continuous values into discrete intervals or bins. The 
 - Got to understand about how missing values exists in the dataset. This can be due to data not being properly collected, 
 collection and management errors, data intentionally being omitted or could be created due to transformation of the data. 
 And also, revised about dealing with missing values as well as other data issues such as bad characters and other stray 
-characters.
+characters. 
  
 
 
 ___
-  
+
+## Day 24
+
+Today I completed the course that I started yesterday **Feature Engineering for Machine Learning in Python**. In the remaining
+portion of the course I learnt the following stuffs: <br> <br>
+- Learnt about Data distribution and what can be done to handle the skewed data and outliers. For skewed data, we mostly 
+perform **Min-Max Scaling**, **Standardization** and **Log Transformation** and while dealing with outliers, we calculate
+**quartiles** and handle the datas or perform **Standard deviation based detection**. <br> <br>
+**Quantiles In Python** <br> <br> ![quantiles](Day24/quantile_code.png) <br> <br>
+**Standard Based Outlier Detection** <br> <br> ![std](Day24/std_outlier_removal_code.png) <br> <br>
+- Dealt with text datas where I performed removal of unwanted characters, Standardize the case, converted text to columns
+and found common words. Used **CountVectorizer**;  a tool in natural language processing that converts a collection of
+text documents into a matrix of token counts, representing the frequency of each word in the vocabulary across the documents.
+Similarly, revised about **TF-IDF** which helps to highlight words that are unique and meaningful, while downplaying common 
+words that appear everywhere, like **the** or **is**. Also had a concept on N-gram where n n-gram is a sequence of n 
+consecutive words or tokens from a text, used in natural language processing to capture word patterns and context, where
+n can be 1 (unigram), 2 (bigram), or more. Few implementations: <br> <br>
+**CountVectorizer :** <br> <br> ![count_vectorizer](Day24/count_vectorizer.png) <br> <br>
+**NGrams** <br> <br> ![n_grams](Day24/n_grams.png)
