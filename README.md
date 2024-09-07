@@ -47,7 +47,7 @@ ___
    | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 23](Day23) | One hot encoding, dummmy encoding, Binarizing And Binning, Dealing with data issues                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 24](Day24) | Dealing with skewed data, Outliers, Standardizing the text data, CountVectorizer, TF-IDF                                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
-
+    | [Day 25](Day25) | Model creation, accuracy metrics(MAE, MSE), confusion matrix, precision/recall, bias-variance trade off                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -975,3 +975,21 @@ consecutive words or tokens from a text, used in natural language processing to 
 n can be 1 (unigram), 2 (bigram), or more. Few implementations: <br> <br>
 **CountVectorizer :** <br> <br> ![count_vectorizer](Day24/count_vectorizer.png) <br> <br>
 **NGrams** <br> <br> ![n_grams](Day24/n_grams.png)
+
+___
+
+## Day 25
+
+Today I started learning about **Model Validation In Python**. The learnings are summarized as follows: <br> <br>
+
+- The course simply reviewed me through the introduction to model validation, regression models, classification models
+in the initial chapters, where I solved some exercises related to them. <br><br>
+- In the next chapter, I was again revised with the creation of training and testing sets, accuracy metrics in regression
+model such as **Mean Absolute Error** and **Mean Squared Error**, Confusion Matrices, Precision vs recall, The bias-variance
+trade-of, etc. Here also, I performed some exercises based on this. <br> <br>
+  **Precision Sample Code:** <br> <br>
+    ![precision](Day25/precision.png)
+Few chapters within this track are so repetitive. Since I kept in my syllabus to be covered I need to finish it, so don't
+mind :)
+
+___
