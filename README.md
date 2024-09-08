@@ -47,8 +47,8 @@ ___
    | [Day 22](Day22) | Predicting Data Over Time, Interpolation in Pandas, Creating Features From The Past, CV of time series data                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 23](Day23) | One hot encoding, dummmy encoding, Binarizing And Binning, Dealing with data issues                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 24](Day24) | Dealing with skewed data, Outliers, Standardizing the text data, CountVectorizer, TF-IDF                                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
-    | [Day 25](Day25) | Model creation, accuracy metrics(MAE, MSE), confusion matrix, precision/recall, bias-variance trade off                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 25](Day25) | Model creation, accuracy metrics(MAE, MSE), confusion matrix, precision/recall, bias-variance trade off                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 26](Day26) | KFold(), cross_val_score(), LOOCV                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -991,5 +991,26 @@ trade-of, etc. Here also, I performed some exercises based on this. <br> <br>
     ![precision](Day25/precision.png)
 Few chapters within this track are so repetitive. Since I kept in my syllabus to be covered I need to finish it, so don't
 mind :)
+
+___
+
+## Day 26
+
+Today I completed the course that I started yesterday i.e. **Model Validation In Python**. The remaining portions were about
+Cross-validation and some light touch to the hyperparameter tuning. I almost have covered a lot of portion of that in previous
+days, but there were few new things that I discovered. The summarized compilation of today's learning are as follows: <br> <br>
+- Performed splitting with the help of **KFold** stored as _splits_ and divided the set into training and validation set as
+the code snapshot provided below. The KFold function in scikit-learn is used to split a dataset into a specified number of 
+folds (subsets) for cross-validation, ensuring that each fold is used as both training and validation sets in different iterations.<br> <br>
+  ![kfold](Day26/kfold.png) <br> <br>
+- Performed some exercises on cross-validation with the use of _Sklearn's_ **cross_val_score()**. We have already performed
+this in previous days in many of our exercises and projects that we have covered. <br> <br>
+- The new thing I learnt today was about **Leave-One-Out Cross Validation (LOOCV)**. It is a special case of k-fold cross-validation 
+where the number of folds is equal to the number of data points, meaning each data point is used once as a validation set 
+while the remaining data points form the training set. This approach provides an almost unbiased estimate of the model 
+performance since it tests on every single data point, but it can be computationally expensive for large datasets due to 
+the need to train the model multiple times. **LOOCV** is especially useful when working with small datasets, as it maximizes
+the use of available data for training. A small implementation is provided in below snapshot: <br> <br>
+    ![loocv](Day26/loocv.png) 
 
 ___
