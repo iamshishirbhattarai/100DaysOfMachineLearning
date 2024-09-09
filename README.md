@@ -49,6 +49,7 @@ ___
    | [Day 24](Day24) | Dealing with skewed data, Outliers, Standardizing the text data, CountVectorizer, TF-IDF                                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
    | [Day 25](Day25) | Model creation, accuracy metrics(MAE, MSE), confusion matrix, precision/recall, bias-variance trade off                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 26](Day26) | KFold(), cross_val_score(), LOOCV                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 27](Day27) | Parameters Vs. Hyperparameters, Manual and Automatic Hyperparameter analyzing, Learning Curves, Grid Search                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1012,5 +1013,20 @@ performance since it tests on every single data point, but it can be computation
 the need to train the model multiple times. **LOOCV** is especially useful when working with small datasets, as it maximizes
 the use of available data for training. A small implementation is provided in below snapshot: <br> <br>
     ![loocv](Day26/loocv.png) 
+
+___
+
+## Day 27
+
+Today I started the new chapter that is about **Hyperparameter Tuning In Python**. Well, this is the last chapter that is
+kind of revision for me. After this chapter, completely new stuffs are coming. <br> <br>
+- Learnings were pretty similar. Revised about hyperparameters and parameters of various algorithms such as Logistic Regression,
+Linear Regression, Random Forest, Gradient Boosting, etc. From extracting and exploring to setting and analyzing hyperparameter 
+values with learning curves were per formed. A snapshot of the implementation is provided below: <br> <br>
+**Code Snap:** <br> <br> ![learning_curve_code](Day27/learning_curve_code.png) <br> <br>
+**Learning Curve:** <br> <br> ![learning_curve](Day27/learning_curve.png) <br> <Br>
+
+- The next chapter was about **Grid Search** which I have well covered in previous days. But, I got chances to revise as 
+well as practice the inbuilt exercises with the course. 
 
 ___
