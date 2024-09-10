@@ -50,6 +50,7 @@ ___
    | [Day 25](Day25) | Model creation, accuracy metrics(MAE, MSE), confusion matrix, precision/recall, bias-variance trade off                    | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 26](Day26) | KFold(), cross_val_score(), LOOCV                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 27](Day27) | Parameters Vs. Hyperparameters, Manual and Automatic Hyperparameter analyzing, Learning Curves, Grid Search                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 28](Day28) | Random Search, Coarse To Fine Tuning, Bayesian Statistics, Genetic Algorithm                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1030,3 +1031,59 @@ values with learning curves were per formed. A snapshot of the implementation is
 well as practice the inbuilt exercises with the course. 
 
 ___
+
+## Day 28
+
+Today I completed the chapter that I started yesterday which was about **Hyperparameter Tuning In Python**. Today's first
+chapter was about **Random Search** which I have pretty covered in previous days and implemented it too. **Grid Search**
+and **Random Search** are **Uninformed Search** where each iteration of hyperparameter tuning doesn't learn from the previous
+iterations. Today I learnt about the **Informed Search** which learns from the previous iterations. Learnt stuffs are compiled
+below : <br> <br>
+- **Coarse to Fine Tuning :** <br> <br>
+    It starts out with a rough random approach and iteratively refine the search. The process includes the following: <br>
+    1. Random Search
+    2. Find Promising Areas
+    3. Grid Search In Smaller Area
+    4. Continue until optimal score is obtained. <br> <br>
+  
+   This utilizes the advantages of both grid and random search. Uses Random search to select over larger areas and Grid Search
+ot find the optimal within the selected area making it better in terms of spending of time and computational efforts. <br> <br>
+- **Bayesian Statistics :** <br> <br>
+   In Bayesian statistics for informed search, prior knowledge is updated with new data to refine predictions and guide 
+the search process. This approach uses probabilistic models to estimate the likelihood of different outcomes, optimizing 
+search efficiency by focusing on the most promising areas based on updated beliefs. Simple Baye's code implementation is also
+attached below: <br> <br> ![simple_bayes_implementation](Day28/simple_bayes_implementation.png) <br> <br>
+
+  The general process for Hyperparameter tuning is : <br>
+  1. Pick a hyperparameters combination
+  2. Build a model
+  3. Get new evidence (The score of the model)
+  4. Update beliefs and choose better hyperparameters the next round. <br> <br>
+  
+  I simply performed exercise based on this using **Hyperopt** library by setting the domain, optimization algorithm and 
+the function. Snapshot of the exercise is kept below: <br> <br>
+    ![bayes_code](Day28/bayes_code.png) <br> <br>
+
+- **Genetic Algorithm :** <br> <br>
+  A genetic algorithm is a search optimization technique inspired by natural selection, where potential solutions evolve 
+over generations through processes like selection, crossover, and mutation. It iteratively improves a population of candidate
+solutions to find the best fit for a given problem by mimicking the principles of biological evolution. The Hyperparameter 
+tuning process involves the following: <br> 
+  1. Create some models.
+  2. Pick the best (By scoring function).
+  3. Create new models that are similar to the best ones.
+  4. Add in some randomness so we don't reach local optimum.
+  5. Repeat until we are satisfied/happy. <br> <br>
+  
+  Implemented this using **TPOT** library. Let's be familiar with few of its components: <br> <br>
+  1. **generations:** iterations to run training for.
+  2. **population_size:** no. of models to produce in each iteration.
+  3. **mutation_rate:** The proportion of pipelines to breed each iteration.
+  4. **scoring:** The function to determine the best models.
+  5. **cv :** cross-validation  <br> <br>
+  
+  Visit the simple example's snapshot below: <br> <br>
+    ![genetic_algorithm](Day28/genetic_algorithm.png)
+
+___
+    
