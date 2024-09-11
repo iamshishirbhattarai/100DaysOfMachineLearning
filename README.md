@@ -51,6 +51,8 @@ ___
    | [Day 26](Day26) | KFold(), cross_val_score(), LOOCV                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 27](Day27) | Parameters Vs. Hyperparameters, Manual and Automatic Hyperparameter analyzing, Learning Curves, Grid Search                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 28](Day28) | Random Search, Coarse To Fine Tuning, Bayesian Statistics, Genetic Algorithm                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 29](Day29) | Regular Expressions, Tokenization, Bag-Of-Words, Stop Words, Lemmatization, Gensim                                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
 
 
 
@@ -1086,4 +1088,41 @@ tuning process involves the following: <br>
     ![genetic_algorithm](Day28/genetic_algorithm.png)
 
 ___
-    
+  
+## Day 29
+
+Today I started the new course from the **DataCamp's** Track which was about **Introduction To Natural Language Processing**.
+Learnings are summarized below in points: <br> <br>
+- Learnt about **Regular Expressions** in depth. RegEx are strings with a special syntax that allows us to match patterns
+in other strings. It has a wide range of applications such as to find all web links in a document, to parse email address, 
+to remove/replace unwanted characters. Implemented this using **re** library. <br> <br> 
+ **Syntax** <br> 
+  ```python
+  import re
+  re.match(pattern, string)
+  ```
+  There are other activities such as _split_, _findall_, _search_, etc. which can be used in place of _match_ as per the 
+requirements. Studied about common RegEx pattern and also Regex ranges and groups. A simple implementation's snapshot is
+provided below: <br> <br>
+    ![regex](Day29/regex.png) <br> <br>
+
+- Studied about **Tokenization**. It is the process or technique of turning a string or document into tokens (small chunks).
+Some examples can be breaking out words or sentences, separating punctuations and separating all hashtags in a tweet. 
+Tokenizing is necessary as it is easier to map part of speech, match common words and remove unwanted tokens. Implemented 
+tokenization with the help of **nltk** library. There are various **nltk** tokenizers such as _word_tokenize_ which 
+tokenize sentence into words, _sent_tokenize_ which tokenize a document into sentences, _regexp_tokenize_ that tokenize a 
+string or document based on a regular expression pattern and also _TweetTokenizer_ that is used for tweet tokenization allowing
+to separate hashtags, mentions, exclamation points. A simple code implementation of the tokenizers are as follows: <br> <br>
+    ![tokenized](Day29/tokenized.png) <br> <br> ![tweet_tokenizer](Day29/TweetTokenizer.png) <br> <br>
+- Got to know about **Bag-of-words** which is a basic method for finding topic in a text. For this, it is needed to first 
+create tokens using tokenization and then count up all the tokens. The more frequent word, the more important it might be.
+So, it generally helps to know the significance words in a text. Implemented this using **Counter** from **collections**: <br> <br>
+    ![bag_of_words](Day29/bag_of_words.png) <br> <br>
+- Performed simple text processing with the use of **RegEx**, **stopwords** from **nltk.corpus**. Also did **Lemmatization**
+in inbuilt exercise of the course. It is generally a process of reducing a word into its base or root form. Examples: Running
+to Run, Crying to Cry, Bigger to Big, Better to Good, etc. <br> <br>
+- Got introduced with **Gensim** which is a popular open source library designed for topic modeling and document similarity 
+analysis. Studied about Mathematics behind **Tf-idf** value calculation. Higher TF-IDF indicates terms that are frequent 
+in a document but rare in overall corpus making them important keys for that document.
+
+___
