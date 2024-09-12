@@ -52,6 +52,7 @@ ___
    | [Day 27](Day27) | Parameters Vs. Hyperparameters, Manual and Automatic Hyperparameter analyzing, Learning Curves, Grid Search                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 28](Day28) | Random Search, Coarse To Fine Tuning, Bayesian Statistics, Genetic Algorithm                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 29](Day29) | Regular Expressions, Tokenization, Bag-Of-Words, Stop Words, Lemmatization, Gensim                                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 30](Day30) | Named Entity Recognition with nltk, SpaCy and Polyglot                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1124,5 +1125,28 @@ to Run, Crying to Cry, Bigger to Big, Better to Good, etc. <br> <br>
 - Got introduced with **Gensim** which is a popular open source library designed for topic modeling and document similarity 
 analysis. Studied about Mathematics behind **Tf-idf** value calculation. Higher TF-IDF indicates terms that are frequent 
 in a document but rare in overall corpus making them important keys for that document.
+
+___
+
+## Day 30
+
+Continuing the **Introduction to NLP** course from Datacamp's Track, today I learnt about **Named Entity Recognition**.
+Summarizing the learning in following points: <br> <br>
+
+- **Named Entity Recognition (NER)** is a natural language processing (NLP) technique that identifies and categorizes key
+entities within a text, such as names of people, organizations, locations, dates, and other specific terms. NER models 
+analyze the context and syntactic structure of sentences to tag these entities accurately. It helps in transforming 
+unstructured text into structured data, which can be used in various applications like information retrieval, summarization, 
+and question-answering systems. NER uses machine learning algorithms or rule-based approaches, with modern systems often
+relying on deep learning for improved accuracy. This technology is crucial for tasks that require extracting actionable 
+information from large volumes of text data. <br> <br>
+- Implemented **NER** with **nltk** library. A simple codesnap is provided below: <br> <br> ![NER](Day30/named_entity_recognition.png)
+ <br> <br>
+- Got Introduced with **SpaCy** library. It focuses on creating NLP pipelines to generate models and corpora. Using **SpaCy**
+can be beneficial due to various reasons such as Easy Pipeline creation, different entity types compared to **nltk** and
+informal language corpora. A quick implementation's snapshot is provided below: <br> <br> ![ner_spacy](Day30/ner_spacy.png)
+<br> <br>
+- Had a brief introduction to **Polyglot** library and performed Multilingual NER (Specifically Spanish) in inbuilt exercise
+of the course. This library has vectors for more than 130 languages. 
 
 ___
