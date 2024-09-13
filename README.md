@@ -53,6 +53,7 @@ ___
    | [Day 28](Day28) | Random Search, Coarse To Fine Tuning, Bayesian Statistics, Genetic Algorithm                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 29](Day29) | Regular Expressions, Tokenization, Bag-Of-Words, Stop Words, Lemmatization, Gensim                                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 30](Day30) | Named Entity Recognition with nltk, SpaCy and Polyglot                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 31](Day31) | Use of CountVectorizer & TfidfVectorizer for text classification, Introduction to Naive Bayes Classifier                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1148,5 +1149,28 @@ informal language corpora. A quick implementation's snapshot is provided below: 
 <br> <br>
 - Had a brief introduction to **Polyglot** library and performed Multilingual NER (Specifically Spanish) in inbuilt exercise
 of the course. This library has vectors for more than 130 languages. 
+
+___
+
+## Day 31
+
+Today I completed the course **Introduction to NLP in Python**. The remaining portion was about classification task in NLP.
+Learnings are summarized below: <br> <br>
+- Used **CountVectorizer** and **TfidfVectorizer** for text classification in inbuilt exercises of the course. <br> <br>
+- Have a introductory understanding of **Naive Bayes Classifier**.
+The Naive Bayes Classifier is a probabilistic machine learning model used for classification tasks, based on Bayes' theorem
+with the assumption of independence between features. It is called "naive" because it assumes that all features contribute 
+independently to the probability of a class label, which simplifies computation even though it might not always reflect reality. 
+Despite this simplification, Naive Bayes often performs well in many practical applications, especially for text classification 
+tasks like spam detection or sentiment analysis. It calculates the posterior probability of each class given the input features
+and selects the class with the highest probability. Naive Bayes is fast, efficient, and particularly effective with high-dimensional
+data, making it suitable for large datasets. However, its limitations include the strong independence assumption, which 
+may not hold true in real-world data, leading to less accurate predictions. It also struggles with handling continuous 
+variables directly without discretization or transformation. Additionally, Naive Bayes can be sensitive to the presence of 
+irrelevant features, and it may not perform well if the frequency of words or features is crucial to understanding the context,
+such as in complex text data. Finally, it assumes that all features contribute equally to the outcome, which can be unrealistic
+in many situations where some features are more informative than others. Simply implemented the classifier with the help 
+of **sklearn** library. Code Snap is attached below: <br> <br>
+    ![naive_bayes](Day31/naive_bayes.png) <br> <br>
 
 ___
