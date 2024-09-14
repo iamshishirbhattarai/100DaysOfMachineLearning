@@ -54,6 +54,7 @@ ___
    | [Day 29](Day29) | Regular Expressions, Tokenization, Bag-Of-Words, Stop Words, Lemmatization, Gensim                                         | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 30](Day30) | Named Entity Recognition with nltk, SpaCy and Polyglot                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 31](Day31) | Use of CountVectorizer & TfidfVectorizer for text classification, Introduction to Naive Bayes Classifier                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 32](Day32) | spaCy NLP Pipelines And Familiarity with the syntax                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
 
 
 
@@ -1172,5 +1173,25 @@ such as in complex text data. Finally, it assumes that all features contribute e
 in many situations where some features are more informative than others. Simply implemented the classifier with the help 
 of **sklearn** library. Code Snap is attached below: <br> <br>
     ![naive_bayes](Day31/naive_bayes.png) <br> <br>
+
+___
+
+## Day 32
+
+I started the new course which is about **Natural Language Processing With spaCy**. Already had been shortly introduced 
+with the library in previous course. But, this time going on detail. Today I just became familiar with the syntax to perform
+few basic tasks using the library. Few are mentioned below: <br> <br>
+
+- **spaCy** introduction: It is a free, open-source library for NLP in python which is designed to build system for information
+extraction and supports 64+ languages. Also has visualization library. <br> <br>
+- Learnt about **spaCy NLP Pipeline**. The spaCy NLP pipeline processes text by passing it through several stages, including
+tokenization, part-of-speech tagging, dependency parsing, named entity recognition (NER), and other linguistic annotations.
+Each component in the pipeline performs a specific task, transforming the `Doc` object step by step, allowing for efficient
+and streamlined natural language processing. <br> <br>
+- Became familiar with pipeline components and their basic syntax. Few Implementations are attached below: <br> <br>
+  **Tokenization With Spacy :** <br> <br> ![tokenization](Day32/tokenization_spacy.png) <br> <br>
+  **Sentence Segmentation With Spacy :** <br> <br> ![sentence_segmentation](Day32/sentence_segmentation.png) <br> <br>
+
+- Also performed **lemmatization**, **POS tagging**, **NER** and also got introduced with **displacy** visualizer.
 
 ___
