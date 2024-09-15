@@ -55,6 +55,7 @@ ___
    | [Day 30](Day30) | Named Entity Recognition with nltk, SpaCy and Polyglot                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 31](Day31) | Use of CountVectorizer & TfidfVectorizer for text classification, Introduction to Naive Bayes Classifier                   | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 32](Day32) | spaCy NLP Pipelines And Familiarity with the syntax                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       | 
+   | [Day 33](Day33) | Dependency Parsing, spaCy Vocabulary, Similarity Score                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1195,3 +1196,33 @@ and streamlined natural language processing. <br> <br>
 - Also performed **lemmatization**, **POS tagging**, **NER** and also got introduced with **displacy** visualizer.
 
 ___
+
+## Day 33
+
+I continued the course that I started yesterday and went little bit deeper with Linguistic Annotations and Word Vectors.
+The learnings are compiled below: <br> <br>
+
+- Learnt about **Dependency Parsing**. Dependency parsing is the process of analyzing the grammatical structure of a sentence
+by identifying how words are related to each other, typically in terms of subjects, objects, and modifiers. It represents
+these relationships in a tree-like structure, where words are connected by directed edges that signify their dependencies.
+Learnt a basic implementation with **spaCy**. We can even visualize with **displacy** following the syntax below: <br> <br>
+    ```python
+     from spacy import displacy
+     doc = nlp(text)
+     spacy.displacy.serve(doc, style="dep")
+    ```
+  
+  Also **.dep_** attribute can be used to access the dependency label of a token. <br> <br>
+    ![dependency_label](Day33/dependency_label.png) <br> <br>
+
+- Studeied about **spaCy Vocabulary** and also perform word vectors visualization. For this, the PCA need to be done as 
+there were high dimensions of data. PCA were implemented as follows: <br> <br>
+    ![pca](Day33/pca.png) <br> <br>
+  Then it was simply visualized using **matplotlib**. <br> <Br>
+
+- Learnt to find the **similarity score**: a metric defined over texts. It uses cosine similarity and word vectors. Cosine 
+similarity is any number between 0 and 1. A larger cosine similarity metric represents more similar word vectors and vice-versa.
+Found similarity score between documents, sentences and spans whose snapshots are attached below: <br> <br>
+    **Document similarity score** <br> <br> ![doc_similarity](Day33/doc_similarity_score.png) <br> <br>
+    **Sentence similarity score** <br> <br> ![sentence_similarity](Day33/sentence_similarity.png) <br> <br>
+    **Span similarity score** <br> <br> ![span_similarity](Day33/span_similarity.png)
