@@ -1244,3 +1244,41 @@ phraseMatcher. Provided a simple code snapshot below ofspaCy EntityRuler impleme
     ![spacy_model_from_scratch](Day34/trainiing_spacy_model_from_scratch.png)
 
 ___
+
+## Day 35
+
+Today I thought of doing a project and started a classification project i.e. **Breast Cancer Detection**. Let's summarize
+whatever I did during the project in few points as follows: <br> <br>
+- Loaded the dataset and observed it. Found an unnecessary column named **Unnamed: 32** which had only NAN values. So, I 
+dropped it and revisited the dataset. Other columns were fine and had no null values. <br> <br>
+- Splitted data into training and testing set. The dataset has total of 569 datas where 357 were **"B" (Benign) i.e. no cancer**
+and 212 were **"M" (Malignant) i.e. cancer**. I tried **Random Forest**, **KNN** and **XGBoost** for the classification.
+**KNN** really didn't perform well, so not including it. While **randomly sampled**, the results were as follows: <br> <br>
+**Random Sampling** <br> 
+
+  | Metrics | Random Forest | XGBoost |
+  | ---- | ----| ---|
+  | Accuracy Score | 0.9649 | 0.9561 |
+   | Recall | 0.9302 | 0.9523 | <br> <br>
+ 
+    ![random_sampling_rf](Day35/Random_Sampling_RF.png) <br> <br> ![random_sampling_XGB](Day35/Random_Sampling_XGBoost.png)
+    <br> <br> Since we had smaller dataset and the data was kind of imbalanced. So, thought of using **Stratified Sampling Method**.
+     The performances are tabulated below: <br> <br>
+  **Stratified Sampling** <br> 
+
+  | Metrics | Random Forest | XGBoost |
+  | ---- |---------------|---------|
+  | Accuracy Score | 0.9561        | 0.8809  |
+   | Recall | 0.9737        | 1.0     | <br> <br>
+
+    Visit the notebook to see the result in detail :  [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb)
+<br> <br>
+
+In this Project, we need to focus on **recall** rather than other metrics as In cancer detection, a higher recall ensures 
+that as many actual cancer cases as possible are identified, reducing the risk of missing patients who have cancer. 
+Missing a cancer diagnosis (false negative) can delay treatment, potentially leading to worse health outcomes. Although 
+higher recall may increase false positives, it prioritizes catching all possible cancer cases, which is crucial for early 
+intervention and treatment. So, found **XGBoost** as a better choice but I will still work on this tomorrow and do some
+fine tunings and finalise the project.
+
+___
