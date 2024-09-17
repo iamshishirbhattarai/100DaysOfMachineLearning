@@ -1268,8 +1268,8 @@ and 212 were **"M" (Malignant) i.e. cancer**. I tried **Random Forest**, **KNN**
 
   | Metrics | Random Forest | XGBoost |
   | ---- |---------------|---------|
-  | Accuracy Score | 0.9561        | 0.8809  |
-   | Recall | 0.9737        | 1.0     | <br> <br>
+  | Accuracy Score | 0.9561        | 0.9737  |
+   | Recall | 0.8809        | 1.0     | <br> <br>
 
     Visit the notebook to see the result in detail :  [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb)
 <br> <br>
