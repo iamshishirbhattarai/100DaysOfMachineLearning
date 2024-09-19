@@ -62,6 +62,7 @@ ___
    | [Day 34](Day34) | Data analysis with spaCy, customizing spaCy model                                                                                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 35](Day35) | [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb) Project Started   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 36](Day36) | [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb) Project Completed | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |         
+   | [Day 37](Day37) | Introduction to Neural Networks, Activation & Basic syntax of PyTorch                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1295,4 +1296,24 @@ around **0.96** to **0.97**. <br> <br>
 
 Visit the complete project here : [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb)
 
+___
+
+## Day 37
+
+Today I started learning a new course from **Datacamp's** track. The title of the course is **Introduction to Deep Learning with PyTorch**.
+Today I simply became familiar with what's Neural Networks, Activation functions (Sigmoid & Softmax) and syntaxes of 
+**PyTorch**. Basic introduction to these topics with whatever I understood are provided below: <br> <br>
+- A **neural network** is a computational model inspired by the structure of the human brain, consisting of layers of interconnected
+nodes (neurons) that process input data to learn patterns and make predictions. It uses weights and biases, adjusted through training
+, to minimize error and improve its performance on tasks like classification or regression. <br> <br>
+- An **activation function** is a mathematical function applied to the output of a neural network's neuron, determining whether
+it should be activated or not. It introduces non-linearity into the model, enabling the network to learn and solve complex 
+problems beyond simple linear relationships. Learnt two types of **activation function**: <br> <br>
+   1. **Sigmoid Function** is an activation function that maps input values to a range between 0 and 1, commonly used for 
+binary classification tasks. <br> <br>
+  2.  **Softmax Function** The softmax function is an activation function that converts a vector of raw scores into probabilities 
+by normalizing them, ensuring the output values sum to 1, commonly used for multi-class classification. <br> <br>
+
+- Became familiar with the basic syntax of **PyTorch**. <br> <br>
+    ![torch_DL](Day37/torch_DL.png) 
 ___
