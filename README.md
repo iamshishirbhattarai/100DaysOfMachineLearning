@@ -63,7 +63,7 @@ ___
    | [Day 35](Day35) | [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb) Project Started   | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |
    | [Day 36](Day36) | [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb) Project Completed | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |         
    | [Day 37](Day37) | Introduction to Neural Networks, Activation & Basic syntax of PyTorch                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 38](Day38) | Forward & Backward Pass, Loss function, Optimizers, Training Loop                                                                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1316,4 +1316,25 @@ by normalizing them, ensuring the output values sum to 1, commonly used for mult
 
 - Became familiar with the basic syntax of **PyTorch**. <br> <br>
     ![torch_DL](Day37/torch_DL.png) 
+___
+
+## Day 38
+
+Started the next chapter of the course **Introduction to Deep Learning With PyTorch**. Today I learnt about the **Forward
+pass** abd **Backward Pass**, **Loss Function** , **Optimizer** and **Training Loop In PyTorch**. Below are some summary
+of whatever I learnt: 
+
+- **Forward Pass** involves passing input data through the layers to compute the output (predictions) while 
+**Backward Pass** calculates the gradients of the loss function with respect to the network's parameters using backpropagation,
+enabling the model to update its weights. <br> <br>
+- A **loss function** in a neural network quantifies the difference between the predicted output and the actual target values.
+It guides the optimization process by providing feedback on how well the model is performing, allowing adjustments to improve accuracy.
+<br> <br>
+- An **optimizer** in a neural network adjusts the model's parameters based on the gradients calculated during the backward
+pass to minimize the loss function. It uses various algorithms, such as stochastic gradient descent or Adam, to effectively
+navigate the parameter space and improve model performance. <br> <br>
+- ALso learnt about **training Loop** in PyTorch and implemented some inbuilt exercises. <br> <br>
+- A simple implementation of multiclass classification is done and a snapshot of the code is provided below: <br> <br>
+    ![multiclass](Day38/multiclass_classification.png)
+
 ___
