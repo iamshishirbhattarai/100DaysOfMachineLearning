@@ -64,7 +64,7 @@ ___
    | [Day 36](Day36) | [**Breast Cancer Detection**](https://github.com/iamshishirbhattarai/Machine-Learning/blob/main/Breast%20Cancer%20Detection/breast_cancer_detection.ipynb) Project Completed | [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://github.com/ageron/handson-ml3)                                                                                                                                         |         
    | [Day 37](Day37) | Introduction to Neural Networks, Activation & Basic syntax of PyTorch                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 38](Day38) | Forward & Backward Pass, Loss function, Optimizers, Training Loop                                                                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 39](Day39) | RELU, Learning Rate & Momentum, Transfer Learning, Loading the dataset, Evaluating & Improving Model Performances                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1336,5 +1336,34 @@ navigate the parameter space and improve model performance. <br> <br>
 - ALso learnt about **training Loop** in PyTorch and implemented some inbuilt exercises. <br> <br>
 - A simple implementation of multiclass classification is done and a snapshot of the code is provided below: <br> <br>
     ![multiclass](Day38/multiclass_classification.png)
+
+___
+
+## Day 39
+
+Today I completed the course **Introduction to Deep Learning with PyTorch**. The remaining chapters were about 
+**Neural Network Architecture and Hyperparameters** and **Evaluating and Improving Models**. 
+
+- Learnt about **RELU** and **Leaky RELU**. 
+ReLU outputs zero for negative inputs while Leaky ReLU allows a small, non-zero output for negative inputs, preventing
+dead neurons during training. For positive inputs, the output is same as the input in both of those activation functions.
+<br> <br>
+- Learnt about **Learning Rate** and **Momentum**. The **learning rate** controls the size of the steps taken during optimization;
+a higher learning rate can speed up training but risks overshooting minima, while a lower rate can lead to more precise convergence
+but may slow down the process. **Momentum** helps accelerate optimization by accumulating past gradients to smooth out updates, 
+allowing the model to navigate through ravines and accelerate in the relevant direction. <br> <br>
+- Got to study about **Transfer Learning** and **Fine-Tuning**. **Transfer learning** is a machine learning technique where a
+model developed for a specific task is reused as the starting point for a model on a second, related task, allowing it to
+leverage the knowledge gained from the first task to improve performance on the new one. In **Fine-Tuning**, not ever layer is 
+trained. Generally, early layers of network are frozen and later layers close to output layers are fine-tuned (making small
+adjustments on pre-trained model). 
+- Recalled **Data Loading**, **Evaluating Model Performance** using **loss** and **accuracy metrics**. Also, Learnt to
+avoid **overfitting** and fine tuning basics using **Grid Search** and **Random Search**. <br> <br>
+Few snapshots of the code during exercise are attached below: <br> <br>
+  **Validation Loss** <br> <br> ![validation_loss](Day39/validation_loss.png) <br> <br>
+  **TensorDataset** <br> <br> ![tensor_Dataset](Day39/tensor_dataset.png) <br> <br>
+
+****Note :** This is just introductory courses that I am recently doing, so that it gets easier during **Deep Learning** Journey.
+That's why I am not going much in detail. I will cover all these topics very well in the particular journey.**
 
 ___
