@@ -65,7 +65,7 @@ ___
    | [Day 37](Day37) | Introduction to Neural Networks, Activation & Basic syntax of PyTorch                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 38](Day38) | Forward & Backward Pass, Loss function, Optimizers, Training Loop                                                                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 39](Day39) | RELU, Learning Rate & Momentum, Transfer Learning, Loading the dataset, Evaluating & Improving Model Performances                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 40](Day40) | Training Robust Neural Networks (Using OOP)                                                                                                                                  | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1365,5 +1365,26 @@ Few snapshots of the code during exercise are attached below: <br> <br>
 
 ****Note :** This is just introductory courses that I am recently doing, so that it gets easier during **Deep Learning** Journey.
 That's why I am not going much in detail. I will cover all these topics very well in the particular journey.**
+
+___
+
+## Day 40
+
+I started the new course **Intermediate Deep Learning with PyTorch** which is the continuation of the previous one.
+The first chapter of the course was about Training Neural Network in a robust way using **Object-Oriented Approach**. The
+learnings are summarized below: <br> <br>
+- Loaded the dataset using **OOP** approach. <br> <br>
+    ![DataLoad_OOP](Day40/DataLoad_OOP.png) <br> <br>
+- Got familiar with class based model definition. <br> <br>
+    ![model_definition_class_based](Day40/model_definition_class_based.png) <br> <br>
+- Performed training loop and model evaluation. <br> <br>
+- Learnt to deal with **vanishing and exploding gradients** with **proper weight initialization** (Using **He/Kaiming** initialization),
+**good activation**(**ELU**) and **Batch Normalization**. **He/Kaiming initialization** initializes the weights of neural networks
+by drawing values from a distribution scaled by the inverse of the square root of the number of input units, ensuring stable
+gradients and improved convergence in deep networks, particularly with ReLU activation functions.
+**ELU (Exponential Linear Unit)** is an activation function that smooths out the negative values exponentially while keeping
+positive values linear, helping to avoid vanishing gradients and improving learning speed.
+**Batch Normalization** normalizes the input of each layer in a neural network by scaling and shifting it based on the batch 
+statistics, improving training stability and allowing for higher learning rates.
 
 ___
