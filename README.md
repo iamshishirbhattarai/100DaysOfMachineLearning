@@ -66,7 +66,7 @@ ___
    | [Day 38](Day38) | Forward & Backward Pass, Loss function, Optimizers, Training Loop                                                                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 39](Day39) | RELU, Learning Rate & Momentum, Transfer Learning, Loading the dataset, Evaluating & Improving Model Performances                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 40](Day40) | Training Robust Neural Networks (Using OOP)                                                                                                                                  | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 41](Day41) | Image and Convolutional Neural Networks                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1386,5 +1386,23 @@ gradients and improved convergence in deep networks, particularly with ReLU acti
 positive values linear, helping to avoid vanishing gradients and improving learning speed.
 **Batch Normalization** normalizes the input of each layer in a neural network by scaling and shifting it based on the batch 
 statistics, improving training stability and allowing for higher learning rates.
+
+___
+
+## Day 41
+
+Continuing the same course that I started yesterday, today I studied the next chapter which was about **Images And 
+Convolutional Neural Networks**. Learnings are compiled in the following points: <br> <br>
+- Loaded images and also performed **Data Augmentation**. **Data Augmentation** is the process of Generating more data by applying
+random transformations to original images. It helps to increase the size and diversity of the training set which improves
+model robustness and reduces overfitting. <br> <br>
+ ![data_augmentation](Day41/data_augmentation.png) <br> <br>
+- Got to know about **Convolutional Neural Network(CNN)**. It is a type of deep learning model designed for processing 
+structured grid-like data such as images. It uses convolutional layers to automatically extract features, pooling layers
+to reduce dimensionality, and fully connected layers for classification or regression tasks. <br> <br>
+    ![cnn](Day41/cnn.png) <br> <br>
+- Trained Image Classifier and also evaluated averaging multi-class metrics such as Recall and Precision. A snapshot of
+training image classifier is attached below: <br> <br>
+    ![training_image_classifier](Day41/training_image_classifier.png)
 
 ___
