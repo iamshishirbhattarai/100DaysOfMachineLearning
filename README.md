@@ -67,9 +67,7 @@ ___
    | [Day 39](Day39) | RELU, Learning Rate & Momentum, Transfer Learning, Loading the dataset, Evaluating & Improving Model Performances                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 40](Day40) | Training Robust Neural Networks (Using OOP)                                                                                                                                  | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 41](Day41) | Image and Convolutional Neural Networks                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
-
-
+    | [Day 42](Day42) | RNN, LSTM, GRU                                                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |                                                                                                                                                                                                                                                     |
 
 ___
 ## Day 1 
@@ -1183,6 +1181,7 @@ of **sklearn** library. Code Snap is attached below: <br> <br>
 
 ___
 
+
 ## Day 32
 
 I started the new course which is about **Natural Language Processing With spaCy**. Already had been shortly introduced 
@@ -1404,5 +1403,22 @@ to reduce dimensionality, and fully connected layers for classification or regre
 - Trained Image Classifier and also evaluated averaging multi-class metrics such as Recall and Precision. A snapshot of
 training image classifier is attached below: <br> <br>
     ![training_image_classifier](Day41/training_image_classifier.png)
+
+___
+
+## Day 42
+
+Continued the same course. Learnt about **RNN**, **LSTM** and **GRU**. Learnings are summarized below: <br> <br>
+- Understood about **RNN** ,**LSTM** and **GRU**. **Recurrent Neural Networks (RNNs)** process sequential data by passing
+information between time steps but struggle with long-term dependencies due to vanishing gradients. **Long Short-Term Memory**
+**(LSTM)** networks solve this by using gates to control the flow of information, allowing them to retain or forget information
+as needed. **Gated Recurrent Units (GRUs)** are a simplified version of LSTMs, combining some of the gates for greater efficiency 
+while still effectively capturing long-term dependencies. <br> <br>
+- Implemented **LSTM** and  **GRU**. <br> <br>
+   **LSTM :** <br> <br> ![LSTM](Day42/LSTM.png) <br> <br>
+    **GRU :** <br> <br> ![GRU](Day42/GRU.png) <br> <br>
+- Performed Training Loop and Evaluation Loop. <br> <br>
+    **Train Loop :** <br> <Br> ![train_loop](Day42/train_loop.png) <br> b<br>
+    **Eval Loop :** <br> <br> ![eval_loop](Day42/eval_loop.png)
 
 ___
