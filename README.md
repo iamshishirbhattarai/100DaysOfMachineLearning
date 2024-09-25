@@ -67,7 +67,15 @@ ___
    | [Day 39](Day39) | RELU, Learning Rate & Momentum, Transfer Learning, Loading the dataset, Evaluating & Improving Model Performances                                                            | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 40](Day40) | Training Robust Neural Networks (Using OOP)                                                                                                                                  | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 41](Day41) | Image and Convolutional Neural Networks                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-    | [Day 42](Day42) | RNN, LSTM, GRU                                                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |                                                                                                                                                                                                                                                     |
+   | [Day 42](Day42) | RNN, LSTM, GRU                                                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |                                                                                                                                                                                                                                                     |
+   | [Day 43](Day43) | Multi-input and Multi-output Models                                                                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
+
+
+
+
+
+
 
 ___
 ## Day 1 
@@ -1360,7 +1368,7 @@ adjustments on pre-trained model).
 avoid **overfitting** and fine tuning basics using **Grid Search** and **Random Search**. <br> <br>
 Few snapshots of the code during exercise are attached below: <br> <br>
   **Validation Loss** <br> <br> ![validation_loss](Day39/validation_loss.png) <br> <br>
-  **TensorDataset** <br> <br> ![tensor_Dataset](Day39/tensor_dataset.png) <br> <br>
+  **TensorDataset** <br> <br> ![tensor_Dataset](Day39/tensor_Dataset.png) <br> <br>
 
 ****Note :** This is just introductory courses that I am recently doing, so that it gets easier during **Deep Learning** Journey.
 That's why I am not going much in detail. I will cover all these topics very well in the particular journey.**
@@ -1420,5 +1428,20 @@ while still effectively capturing long-term dependencies. <br> <br>
 - Performed Training Loop and Evaluation Loop. <br> <br>
     **Train Loop :** <br> <Br> ![train_loop](Day42/train_loop.png) <br> b<br>
     **Eval Loop :** <br> <br> ![eval_loop](Day42/eval_loop.png)
+
+___
+
+## Day 43
+
+Completed the course **Intermediate Deep Learning with PyTorch**. The remaining portion was about **Multi-Input And Output
+Models** along with their **evaluation**. Summarizing in below points: <br> <br>
+
+- Learnt about **Multi-input models** and implemented them. Snapshots are attached below: <br> <br>
+   **Two Input Dataset :** <br> <br> ![two_input_dataset](Day43/two_input_dataset.png) <br> <br>
+   **Two Input Architecture :** <br> <br> ![two_input_architecture](Day43/two_input_architecture.png) <br> <br>
+- Also learnt about **Multi-output models**, implemented it and also evaluated the model. Two output Dataset can be similarly
+fetched as **Two-Input Dataset**<br> <br>
+    **Two Output Architecture :** <br> <br> ![two_output_architecture](Day43/two_output_architecture.png) <br> <br>
+    **Evaluation :** <br> <br> ![evaluation](Day43/evaluation_of_multi_output_model.png) <br> <br>
 
 ___
