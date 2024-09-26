@@ -69,7 +69,7 @@ ___
    | [Day 41](Day41) | Image and Convolutional Neural Networks                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 42](Day42) | RNN, LSTM, GRU                                                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |                                                                                                                                                                                                                                                     |
    | [Day 43](Day43) | Multi-input and Multi-output Models                                                                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 44](Day44) | RGB to GrayScale & Vice-Versa , Flipping Images, Thresholding                                                                                                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1444,4 +1444,25 @@ fetched as **Two-Input Dataset**<br> <br>
     **Two Output Architecture :** <br> <br> ![two_output_architecture](Day43/two_output_architecture.png) <br> <br>
     **Evaluation :** <br> <br> ![evaluation](Day43/evaluation_of_multi_output_model.png) <br> <br>
 
+___
+
+## Day 44
+
+Started a new course **Image Processing In Python** from the same **Datacamp's Track**. Today's learnings are compiled 
+as follows: <br> <br>
+- Learnt about the purpose of **Image Processing** and got introduced with **scikit-image** library. <br> <br>
+- Converted RGB to GrayScale and Vice-versa. Here, **show_image()** is a predefined function to display image.  <br> <br>
+    **Code For RGB To Grayscale** <br> <br> ![rgb2grayscale](Day44/rgb2grayscale_code.png) <br> <br>
+    **Original Image** <br> <br> ![Original_rocket_image](Day44/original_rocket_img.png) <br> <br>
+    **Grayscaled Image** <br> <br> ![Grayscaled_image](Day44/grayscaled_rocket_img.png) <br> <br>
+- Used **Numpy** to fip images using **np.flipud()** for vertical flip and **np.fliplr()** for horizontal flip. <br> <br>
+- Learnt about **thresholding**. Thresholding in image processing is a technique used to segment an image by converting 
+grayscale images into binary images, where pixel values are set to either 0 or 1 based on whether they are below or above a
+certain threshold value. Used **try_all_threshold()** to automatically tests multiple global thresholding algorithms on an 
+image and displays the results for comparison. Similarly, The `threshold_otsu()` function in image processing calculates 
+an optimal global threshold value for an image using Otsu's method, which minimizes intra-class variance between foreground and background pixels. <br> <br>
+    **try_all_threshold() Code** <br> <br> ![try_all_threshold_code](Day44/try_all_thresh_code.png) <br> <br>
+    **Output** <br> <br> ![try_all_thresh_img](Day44/try_all_thresh_img.png) <br> <br>
+    **threshold_otsu() Code** <br> <br> ![threshold_otsu](Day44/threshold_otsu_code.png) <br> <br>
+    **Output** <br> <br> ![threshold_otsu_output](Day44/threshold_otsu_img.png)
 ___
