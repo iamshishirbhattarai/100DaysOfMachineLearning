@@ -70,7 +70,7 @@ ___
    | [Day 42](Day42) | RNN, LSTM, GRU                                                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |                                                                                                                                                                                                                                                     |
    | [Day 43](Day43) | Multi-input and Multi-output Models                                                                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 44](Day44) | RGB to GrayScale & Vice-Versa , Flipping Images, Thresholding                                                                                                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 45](Day45) | Edge Detection, Gaussian Smoothing, Contrast enhancement                                                                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1466,3 +1466,29 @@ an optimal global threshold value for an image using Otsu's method, which minimi
     **threshold_otsu() Code** <br> <br> ![threshold_otsu](Day44/threshold_otsu_code.png) <br> <br>
     **Output** <br> <br> ![threshold_otsu_output](Day44/threshold_otsu_img.png)
 ___
+
+## Day 45
+
+Continued the course and today I learnt about **Edge Detection**, **Gaussian Smoothing** and **Contrast Enhancement**. 
+Learnings are summarized below: <br> <br>
+- Performed **Edge Detection** using **Sobel Learning ALgorithm**. **Edge detection** is a technique used to identify the boundaries 
+of objects within an image, and the **Sobel algorithm** in scikit-image is a filter that computes the gradient magnitude of the image 
+intensity to highlight edges. <br> <br>
+ **Code** <br> <br> ![sobel_code](Day45/sobel_code.png) <br> <br> **Output** <br> <br> ![sobel_img](Day45/sobel_img.png) <br> <br>
+- Also performed **Gaussian Smoothing** is a technique that applies a Gaussian filter to an image, blurring it to reduce noise
+and detail by averaging pixel values based on a Gaussian function. <br> <br>
+   **Code** <br> <br> ![gaussian_code](Day45/gaussian_code.png) <br> <br> **Output** <br> <br> ![gaussian_img](Day45/gaussian_img.png) <br> <br>
+- Learnt about **Contrast Enhancement**. It is a process that improves the visibility of an image by adjusting the intensity 
+differences between its light and dark areas, making features more distinguishable. Used **Histogram equalization** and 
+**Adaptive Histogram Equalization**. Details provided below: <br> <br>
+    1. **Histogram equalization** spreads out the most frequent intensity values. <br> <br>
+        **Code** <br> <br> ![hist_equalize_code](Day45/hist_equalize_code.png) <br> <br> **Original And Resulting Image**
+  <br> <br> ![original](Day45/original_xray.png) <br> <br> ![hist_equalized](Day45/hist_equalized_image.png) <br> <br>
+  2. **Adaptive Histogram Equalization** enhances contrast in an image by applying histogram equalization locally to small 
+regions, rather than the entire image, to improve visibility of details in both bright and dark areas. <br> <br>
+        **Code** <br> <br> ![adaptive_code](Day45/adaptive_hist_code.png) <br> <br> **Original and Resulting Image** <br> <br>
+        ![original](Day45/adaptive_original_img.png) <br> <br> ![equalized_adaptive](Day45/adaptive_equalized_img.png)
+
+
+___
+    
