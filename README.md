@@ -71,7 +71,7 @@ ___
    | [Day 43](Day43) | Multi-input and Multi-output Models                                                                                                                                          | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 44](Day44) | RGB to GrayScale & Vice-Versa , Flipping Images, Thresholding                                                                                                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 45](Day45) | Edge Detection, Gaussian Smoothing, Contrast enhancement                                                                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 46](Day46) | Transformations, Morphology, Image Restoration                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1491,4 +1491,53 @@ regions, rather than the entire image, to improve visibility of details in both 
 
 
 ___
+
+## Day 46
+
+Continuing the course, today I learnt about **Transformations**, **Morphology** and just a slight touch on **Image Restoration**.
+Learnings are compiled in the following points: <br> <br>
+- **Transformations**  are operations that modify an image's appearance, structure, or pixel values. They can change the 
+image's geometry (like size, position, and orientation), adjust intensity or color values, and enhance or detect features in the image.
+Performed **Rotation**, **Rescaling** and **Resizing** of the images. Just code snapshots for the basic syntax are attached
+below: <br> <br>
+    **Rotate-Rescale** : <br> <br> ![rotate_rescale](Day46/rotate_rescale_code.png) <br> <br>
+    **Resize** : <br> <br> ![resized](Day46/resized_proportionally.png) <br> <br>
+- Learnt about **Morphology**. It involves techniques that analyze and manipulate the shapes and structures of objects within images.
+Studied two techniques within it. They are as follows: <br> <br>
+     1. **Dilation** adds pixels to the boundaries of objects in an images i.e. it expands the boundaries. It can be simply
+  implemented as follows : 
+         ```python
+        # Import the module
+        from skimage import morphology
+        
+        # Obtain the dilated image 
+        dilated_image = morphology.binary_dilation(world_image)
+        ```
+          
+    2. **Erosion** removes pixels from the boundaries of objects in an image. It shrinks the boundaries. It can be simply
+  implemented as follows : 
+        ```python
+        # Import the morphology module
+        from skimage import morphology
+        
+        # Obtain the eroded shape 
+        eroded_image_shape = morphology.binary_erosion(upper_r_image)
+       ```
+<br> <br>
+
+- Just touched **Image Restoration**. Being specific, performed **Inpainting**. It is the process of reconstructing lost 
+parts of images after looking at the non-damaged regions. Below the **mask** is pre-defined, which provides the pixels as 0
+for the parts which are defected. Have a simple look on its basic implementation: <br> <br>
+     ```python
+     # Import the module from restoration
+    from skimage.restoration import inpaint
     
+    # Show the defective image
+    show_image(defect_image, 'Image to restore')
+    
+    # Apply the restoration function to the image using the mask
+    restored_image = inpaint.inpaint_biharmonic(defect_image, mask, multichannel=True)
+    show_image(restored_image)
+  ```
+  
+___
