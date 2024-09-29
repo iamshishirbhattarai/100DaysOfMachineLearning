@@ -72,7 +72,7 @@ ___
    | [Day 44](Day44) | RGB to GrayScale & Vice-Versa , Flipping Images, Thresholding                                                                                                                | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 45](Day45) | Edge Detection, Gaussian Smoothing, Contrast enhancement                                                                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 46](Day46) | Transformations, Morphology, Image Restoration                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 47](Day47) | Noise, Superpixels, Segmentation                                                                                                                                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1540,4 +1540,23 @@ for the parts which are defected. Have a simple look on its basic implementation
     show_image(restored_image)
   ```
   
+___
+
+## Day 47
+
+Today I learnt about **Noise**, **Superpixels and Segmentations**. Learnings are compiled below: <br> <br>
+- **Noise** refers to unwanted random variations in pixel intensity that can distort or obscure the visual information in an image.
+Learnt to introduce the **noise** in the image and also **denoise** using **Total-Variation(TV)** and **Bilateral Filter**. 
+The **Total-Variation filter** removes noise by smoothing out small changes in an image while keeping edges sharp, and the 
+**Bilateral filter** smooths the image but keeps edges clear by taking into account both how close pixels are and how similar their colors are.
+<br> <br>
+    **Total Variation :** ![total_variation](Day47/total_variation.png) <br> <br>
+    **Bilateral Filter :** ![bilateral_filter](Day47/bilateral_filter.png) <br> <br>
+
+- Learnt about **Superpixels and Segmentations**. 
+**Superpixels** group nearby pixels with similar color or intensity into meaningful regions, while **segmentation** divides an 
+image into distinct parts to better identify and analyze objects or structures. Used **SLIC (Simple Linear Iterative Clustering)**
+: an unsupervised method to perform segmentation. <br> <br>
+    **SLIC :** ![slic_code](Day47/slic_code.png)
+
 ___
