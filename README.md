@@ -73,7 +73,7 @@ ___
    | [Day 45](Day45) | Edge Detection, Gaussian Smoothing, Contrast enhancement                                                                                                                     | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 46](Day46) | Transformations, Morphology, Image Restoration                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 47](Day47) | Noise, Superpixels, Segmentation                                                                                                                                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 48](Day48) | Cany Edge Detection, Corner Detection, Face Detection                                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 
@@ -1558,5 +1558,61 @@ The **Total-Variation filter** removes noise by smoothing out small changes in a
 image into distinct parts to better identify and analyze objects or structures. Used **SLIC (Simple Linear Iterative Clustering)**
 : an unsupervised method to perform segmentation. <br> <br>
     **SLIC :** ![slic_code](Day47/slic_code.png)
+
+___
+
+## Day 48 
+
+I completed the course **Image Processing in Python**. The remaining portion was about **Edge Detection (Cany Edge Detection)**,
+**Corner Detection** and **Face Detection**. <br> <br>
+
+- **Canny Edge Detection** is a method used to find the edges in an image by first smoothing it to reduce noise and then detecting
+where the intensity changes sharply. It highlights the important edges while ignoring weak ones. Simply implementation can be
+done shown as follows :
+    ```python
+    # Import the canny edge detector 
+    from skimage.feature import canny
+    
+    # Convert image to grayscale
+    grapefruit = color.rgb2gray(grapefruit)
+    
+    # Apply canny edge detector
+    canny_edges = canny(grapefruit)
+    ```
+  
+- **Corner detection** identifies key points where edges meet in an image, helping in tasks like object recognition, 
+image matching, and motion tracking.The **Harris Corner Detector** identifies corners in an image by analyzing the changes in 
+intensity in different directions around a pixel. It finds points where the intensity varies significantly, indicating a corner or edge intersection.
+    ```
+    # Import the corner detector related functions and module
+    from skimage.feature import corner_harris, corner_peaks
+    
+    # Convert image from RGB-3 to grayscale
+    building_image_gray = color.rgb2gray(building_image)
+    
+    # Apply the detector  to measure the possible corners
+    measure_image = corner_harris(building_image_gray)
+    
+    # Find the peaks of the corners using the Harris detector
+    coords = corner_peaks(corner_harris(building_image_gray), min_distance=20, threshold_rel=0.02)
+    ```
+  
+- **Cascade face detection** works by scanning an image using a series of filters to detect faces. It checks simple
+patterns first and then moves on to more complex ones to quickly find facial features.
+    ```python
+    # Load the trained file from data
+    trained_file = data.lbp_frontal_face_cascade_filename()
+    
+    # Initialize the detector cascade
+    detector = Cascade(trained_file)
+    
+    # Detect faces with scale factor to 1.2 and step ratio to 1
+    detected = detector.detect_multi_scale(img=friends_image,
+                                           scale_factor=1.2,
+                                           step_ratio=1,
+                                           min_size=(10, 10),
+                                           max_size=(200, 200))
+   ```
+  
 
 ___
