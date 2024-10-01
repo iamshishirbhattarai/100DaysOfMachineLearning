@@ -74,7 +74,7 @@ ___
    | [Day 46](Day46) | Transformations, Morphology, Image Restoration                                                                                                                               | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 47](Day47) | Noise, Superpixels, Segmentation                                                                                                                                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 48](Day48) | Cany Edge Detection, Corner Detection, Face Detection                                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 49](Day49) | Introduction to PySpark                                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 
 ___
@@ -1614,5 +1614,25 @@ patterns first and then moves on to more complex ones to quickly find facial fea
                                            max_size=(200, 200))
    ```
   
+
+___
+
+## Day 49
+
+
+Today  I’ve completed the Introduction to PySpark course on DataCamp. This course was an exciting dive into the world of 
+distributed computing and big data processing using PySpark, which is crucial for handling large-scale datasets in the real 
+world. PySpark offers a powerful way to process data across multiple nodes, which is a huge step up from traditional data
+manipulation in Python.
+
+In this course, I explored the fundamentals of PySpark, including DataFrames, transformations, actions, and pipelines. 
+I learned how to manipulate large datasets using familiar operations like selecting, filtering, and grouping data. Additionally, 
+I got hands-on experience writing SQL queries within PySpark, making it easier to bridge my SQL skills with the power of distributed 
+data processing. A key highlight was learning how to build machine learning pipelines, which streamline the entire workflow 
+from data transformation to model fitting.
+
+This course was too basic to do any tasks. So, just built the concept today :) <br> <br>
+    ![pyspark](Day49/pyspark.png)
+
 
 ___
