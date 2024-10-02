@@ -75,7 +75,7 @@ ___
    | [Day 47](Day47) | Noise, Superpixels, Segmentation                                                                                                                                             | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 48](Day48) | Cany Edge Detection, Corner Detection, Face Detection                                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 49](Day49) | Introduction to PySpark                                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 50](Day50) | Dealing with Null Values, Column Manipulation, Indexing of Categorical Data, Assembling Columns                                                                              | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 
 ___
 ## Day 1 
@@ -1635,4 +1635,23 @@ This course was too basic to do any tasks. So, just built the concept today :) <
     ![pyspark](Day49/pyspark.png)
 
 
+___
+
+## Day 50
+
+Started the new course **Machine Learning With PySpark**. Learnt couple of chapters and got to learn few things. <br> <br>
+- Learnt to deal with **Null values** using PySpark. <br> <br>
+    ![null_values](Day50/null_values.png) <br> <br>
+- Performed indexing of **Categorical Columns**. In PySpark, StringIndexer is used to convert categorical string columns
+into numerical indices. It assigns a unique numeric index to each category in the column, based on the frequency of occurrence,
+with the most frequent category getting index 0. <br> <br>
+    ![categorical_columns](Day50/categorical_columns.png) <br> <br>
+- Did some **column manipulation**. <br> <br>
+    ![column_manipulation](Day50/column_manipulation.png) <br> <br>
+- Learnt about **Assembling Columns**. In PySpark, columns are assembled into a single vector using the VectorAssembler,
+which combines multiple input columns (features) into a single feature vector. This is commonly used in machine learning
+workflows to prepare data for model training by consolidating numerical features into a single vector column. <br> <br>
+    ![assembling_columns](Day50/assembling_columns.png) <br> <br>
+
+___
 ___
