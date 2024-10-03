@@ -76,7 +76,7 @@ ___
    | [Day 48](Day48) | Cany Edge Detection, Corner Detection, Face Detection                                                                                                                        | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 49](Day49) | Introduction to PySpark                                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 50](Day50) | Dealing with Null Values, Column Manipulation, Indexing of Categorical Data, Assembling Columns                                                                              | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
-
+   | [Day 51](Day51) | Regression & Classification In PySpark                                                                                                                                       | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
 ___
 ## Day 1 
 
@@ -1654,4 +1654,17 @@ workflows to prepare data for model training by consolidating numerical features
     ![assembling_columns](Day50/assembling_columns.png) <br> <br>
 
 ___
+
+## Day 51
+
+Continuted the course **Machine Learning With PySpark**.Today I learnt about **Regression** and **Classification** in 
+**PySpark**. Already familiar with terminologies, just putting snapshots of the exercises done: <br> <br>
+
+- Implemented **DecisionTreeClassifier** and **Logistic Regression**. <br> <br> **Decision Tree:** <br> <br> ![decision_tree](Day51/decision_tree.png) <Br> <br>
+  **Logistic Regression:** <br> <br> ![log_reg](Day51/log_reg.png) <br> <br>
+- Also performed **One-Hot Encoding** as follows: <br> <br> ![onehotEncoder](Day51/onehotEncoder.png) <br> <br>
+- Learnt to implement **Linear Regression**, **Bucketing** and **Regularization**. 
+    <br> <br> **Linear Regression:** ![linear_reg](Day51/linear_reg.png) <br> <br> **Bucketing:** <br> <br>![bucketizer](Day51/bucketizer.png) <br> <Br>
+    **Lasso Regularization:** <br> <br> ![regularization](Day51/regularization.png)
+
 ___
