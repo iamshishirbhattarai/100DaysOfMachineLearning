@@ -9,7 +9,7 @@ This is just a pre-setup and things are added as exploration continues !!
 | **S.N.** | **Books and Lessons (Resources)**                                                                                                 | **Status** |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------|------------| 
 | **1.**   | [**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Part-I)**](https://github.com/ageron/handson-ml3)          | ✅          |
-| **2.**   | [**Machine Learning Scientist With Python**](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | ⏳          |
+| **2.**   | [**Machine Learning Scientist With Python**](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) | ✅          |
 
 ___
 
@@ -77,6 +77,9 @@ ___
    | [Day 49](Day49) | Introduction to PySpark                                                                                                                                                      | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 50](Day50) | Dealing with Null Values, Column Manipulation, Indexing of Categorical Data, Assembling Columns                                                                              | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
    | [Day 51](Day51) | Regression & Classification In PySpark                                                                                                                                       | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+   | [Day 52](Day52) | Pipeline, Cross Validation, Grid Search in PySpark                                                                                                                           | [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python)                                                                                                                       |
+
+
 ___
 ## Day 1 
 
@@ -1666,5 +1669,18 @@ Continuted the course **Machine Learning With PySpark**.Today I learnt about **R
 - Learnt to implement **Linear Regression**, **Bucketing** and **Regularization**. 
     <br> <br> **Linear Regression:** ![linear_reg](Day51/linear_reg.png) <br> <br> **Bucketing:** <br> <br>![bucketizer](Day51/bucketizer.png) <br> <Br>
     **Lasso Regularization:** <br> <br> ![regularization](Day51/regularization.png)
+
+___
+
+## Day 52
+
+With the Completion of **Machine Learning With PySpark**, I completed the whole [Machine Learning Scientist With Python](https://app.datacamp.com/learn/career-tracks/machine-learning-scientist-with-python) 
+track. The remaining portion of the **Machine Learning With PySpark** was about **Pipeline**, **Cross-Validation** and
+**Grid Search**. I was already familiar with these terminologies and concept, I just got familiar with the implementation 
+in **PySpark**. Snapshots are attached below: <br> <br>
+
+- **Pipeline :** <br> <br> ![pipeline](Day52/pipeline.png) <br> <br>
+- **Cross Validation :** <br> <br> ![cross_validation](Day52/cross_validation.png) <br> <br>
+- **Grid Search :** <br> <br> ![grid_search](Day52/grid_search.png) <br> <br>
 
 ___
